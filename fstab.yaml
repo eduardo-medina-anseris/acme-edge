@@ -1,5 +1,7 @@
+
 mountpoints:
   /:
     url: "https://author-p47002-e1212860.adobeaemcloud.com/bin/franklin.delivery/jemedina/universal-editor-getting/main"
     type: "markup"
     suffix: ".html"
+    
