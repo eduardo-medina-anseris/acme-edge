@@ -5,4 +5,4 @@ mountpoints:
     type: "markup"
     suffix: ".html"
 
-  /: https://drive.google.com/drive/folders/1sYn1SGjP_YK8lwIKWoMDIi9BAisSMhp3
+  /articles: https://drive.google.com/drive/folders/1sYn1SGjP_YK8lwIKWoMDIi9BAisSMhp3
