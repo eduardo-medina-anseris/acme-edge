@@ -142,11 +142,6 @@
     ]
   },
   {
-    "component": "richtext",
-    "name": "message",
-    "label": "Banner Message"
-  },
-  {
     "id": "card",
     "fields": [
       {
