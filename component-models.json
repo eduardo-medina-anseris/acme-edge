@@ -142,6 +142,16 @@
     ]
   },
   {
+    "id": "banner",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "message",
+        "label": "Message"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
