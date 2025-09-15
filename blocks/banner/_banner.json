@@ -44,12 +44,8 @@
               "value": ""
             },
             {
-              "name": "primary",
-              "value": "primary"
-            },
-            {
-              "name": "secondary",
-              "value": "secondary"
+              "name": "important",
+              "value": "important"
             }
           ]
         }
