@@ -21,12 +21,12 @@
       "fields": [
         {
           "component": "richtext",
-          "name": "bannerText",
-          "label": "Text"
+          "name": "message",
+          "label": "Alert Message"
         },
         {
           "component": "select",
-          "name": "bannerType",
+          "name": "type",
           "label": "Type",
           "options": [
             {
