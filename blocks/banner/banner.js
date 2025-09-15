@@ -17,7 +17,7 @@ export default function decorate(block) {
   if (fields.message) {
     const msg = document.createElement('div');
     msg.className = 'banner-message';
-
+    msg.innerHTML = fields.message;
     wrapper.appendChild(msg);
   }
 
