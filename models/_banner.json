@@ -18,9 +18,14 @@
   ],
   "models": [
     {
-      "component": "richtext",
-      "name": "message",
-      "label": "Banner Message"
+      "id": "banner",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "message",
+          "label": "Message"
+        }
+      ]
     }
   ]
 }
