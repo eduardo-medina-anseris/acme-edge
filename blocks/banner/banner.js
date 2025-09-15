@@ -27,16 +27,16 @@ export default function decorate(block) {
     block.classList.add(`banner-lf-${data.variation}`);
   }
 
-  // Crear wrapper y agregar todos los campos dinámicamente
+  // Crear wrapper y agregar solo message
   const wrapper = document.createElement('div');
   wrapper.className = 'banner-content';
 
-  Object.entries(data).forEach(([key, value]) => {
-    const field = document.createElement('div');
-    field.className = `banner-${key}`;
-    field.textContent = value;
-    wrapper.appendChild(field);
-  });
+  if (data.message) {
+    const msg = document.createElement('div');
+    msg.className = 'banner-message';
+    msg.textContent = data.message;
+    wrapper.appendChild(msg);
+  }
 
   block.appendChild(wrapper);
 
