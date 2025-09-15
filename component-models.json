@@ -145,23 +145,13 @@
     "id": "banner",
     "fields": [
       {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
+        "component": "richtext",
+        "name": "bannerText",
         "label": "Text"
       },
       {
-        "component": "text",
-        "name": "linkTitle",
-        "label": "Title"
-      },
-      {
         "component": "select",
-        "name": "linkType",
+        "name": "bannerType",
         "label": "Type",
         "options": [
           {
