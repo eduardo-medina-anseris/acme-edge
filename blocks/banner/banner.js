@@ -1,4 +1,6 @@
 export default function decorate(block) {
-  block.textContent = '<div>Hola soy el banner</div>';
-  block.append(ul);
+  block.textContent = '';
+  const elem = document.createElement('div');
+  elem.innerHTML = 'Hola soy el banner';
+  block.append(elem);
 }
