@@ -28,6 +28,13 @@
           "valueType": "string"
         },
         {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Alt",
+          "value": ""
+        },
+        {
           "component": "select",
           "name": "bannerType",
           "label": "Type",
