@@ -147,26 +147,9 @@
       {
         "component": "richtext",
         "name": "message",
-        "label": "Alert Message"
-      },
-      {
-        "component": "select",
-        "name": "type",
-        "label": "Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ]
+        "label": "Banner Message",
+        "value": "",
+        "valueType": "string"
       }
     ]
   },
