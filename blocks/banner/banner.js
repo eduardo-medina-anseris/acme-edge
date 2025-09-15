@@ -8,7 +8,7 @@ export default function decorate(block) {
   block.innerHTML = '';
 
   if (fields.variation) {
-    block.classList.add(`banner--${fields.variation}`);
+    block.classList.add(`banner-lf-${fields.variation}`);
   }
 
   const wrapper = document.createElement('div');
