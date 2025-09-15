@@ -36,8 +36,8 @@
         },
         {
           "component": "select",
-          "name": "bannerType",
-          "label": "Type",
+          "name": "bannerVariation",
+          "label": "Variation",
           "options": [
             {
               "name": "default",
