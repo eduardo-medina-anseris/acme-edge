@@ -160,7 +160,7 @@
       },
       {
         "component": "select",
-        "name": "bannerVariation",
+        "name": "variation",
         "label": "Variation",
         "options": [
           {
