@@ -152,13 +152,6 @@
         "valueType": "string"
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "altern",
-        "label": "Altern",
-        "value": ""
-      },
-      {
         "component": "select",
         "name": "variation",
         "label": "Variation",
