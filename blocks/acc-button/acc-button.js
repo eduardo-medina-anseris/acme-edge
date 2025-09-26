@@ -1,4 +1,4 @@
-export default function function decorate(a) {
+export default function decorate(a) {
   a.title = a.title || a.textContent;
   if (a.href !== a.textContent) {
     const up = a.parentElement;

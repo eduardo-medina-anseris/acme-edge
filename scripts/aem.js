@@ -406,14 +406,14 @@ function wrapTextNodes(block) {
  * Decorates paragraphs containing a single link as buttons.
  * @param {Element} element container element
  */
-function decorateButtons(element) {
+async function decorateButtons(element) {
   const buttonDecorator = await import(
     `${window.hlx.codeBasePath}/blocks/acc-button/acc-button.js`
   );
 
-  element.querySelectorAll('a').forEach((a) => {
-    if (mod.default) {
-      await mod.default(a);
+  element.querySelectorAll('a').forEach(async (a) => {
+    if (buttonDecorator.default) {
+      await buttonDecorator.default(a);
     }
   });
 }
