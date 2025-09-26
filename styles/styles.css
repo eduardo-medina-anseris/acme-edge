@@ -166,7 +166,7 @@ a:hover {
 }
 
 /* buttons */
-a.button:any-link,
+a.acc-button:any-link,
 button {
   box-sizing: border-box;
   display: inline-block;
@@ -189,8 +189,8 @@ button {
   white-space: nowrap;
 }
 
-a.button:hover,
-a.button:focus,
+a.acc-button:hover,
+a.acc-button:focus,
 button:hover,
 button:focus {
   background-color: var(--link-hover-color);
@@ -203,7 +203,7 @@ button:disabled:hover {
   cursor: unset;
 }
 
-a.button.secondary,
+a.acc-button.secondary,
 button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
