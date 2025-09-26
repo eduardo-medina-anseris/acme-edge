@@ -11,7 +11,7 @@
       "banner",
       "text",
       "image",
-      "button",
+      "acc-button",
       "title",
       "hero",
       "cards",
@@ -36,7 +36,7 @@
     "components": [
       "text",
       "image",
-      "button",
+      "acc-button",
       "title"
     ]
   }

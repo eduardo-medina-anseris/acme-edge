@@ -49,7 +49,7 @@
       "components": [
         "text",
         "image",
-        "button",
+        "acc-button",
         "title"
       ]
     }

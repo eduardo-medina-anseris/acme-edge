@@ -81,7 +81,7 @@
     ]
   },
   {
-    "id": "button",
+    "id": "acc-button",
     "fields": [
       {
         "component": "aem-content",
