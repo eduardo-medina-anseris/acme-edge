@@ -6,7 +6,8 @@ export default function decorate(a) {
     if (!a.querySelector('img')) {
       if (up.childNodes.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')) {
         a.className = 'acc-button'; // default
-        up.classList.add('button-container');
+        up.classList.add('acc-button-wrapper');
+        up.classList.add('first');
       }
 
       if (
@@ -15,8 +16,9 @@ export default function decorate(a) {
         && twoup.childNodes.length === 1
         && twoup.tagName === 'P'
       ) {
-        a.className = 'button primary';
-        twoup.classList.add('button-container');
+        a.className = 'acc-button';
+        twoup.classList.add('acc-button-wrapper');
+        twoup.classList.add('second');
       }
 
       if (
@@ -25,8 +27,9 @@ export default function decorate(a) {
         && twoup.childNodes.length === 1
         && twoup.tagName === 'P'
       ) {
-        a.className = 'button secondary';
-        twoup.classList.add('button-container');
+        a.className = 'acc-button';
+        twoup.classList.add('acc-button-wrapper');
+        twoup.classList.add('second');
       }
     }
   }
