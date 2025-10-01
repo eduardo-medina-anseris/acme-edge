@@ -8,6 +8,7 @@ export default function decorate(a) {
         a.className = 'acc-button'; // default
         up.classList.add('button-container');
       }
+
       if (
         up.childNodes.length === 1
         && up.tagName === 'STRONG'
@@ -17,6 +18,7 @@ export default function decorate(a) {
         a.className = 'button primary';
         twoup.classList.add('button-container');
       }
+
       if (
         up.childNodes.length === 1
         && up.tagName === 'EM'
