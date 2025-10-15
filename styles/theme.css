@@ -1,0 +1,225 @@
+/* stylelint-disable */
+:root {
+  --prm-primary_700: #e76a00;
+  --prm-primary_600: #f26d00;
+  --prm-primary_500: #f5821f;
+  --prm-primary_400: #faa362;
+  --prm-primary_300: #f9b788;
+  --snd-secondary_700: #b10dc9;
+  --snd-secondary_600: #ffffff;
+  --grey-black: #000000;
+  --grey-grey_800: #080808;
+  --grey-grey_700: #1b1c1c;
+  --grey-grey_600: #515254;
+  --grey-grey_500: #808285;
+  --grey-grey_400: #b7b9bb;
+  --grey-grey_300: #d8d8d8;
+  --grey-grey_200: #ececec;
+  --grey-grey_100: #f4f6f9;
+  --grey-white: #ffffff;
+}
+und {
+  text-decoration: underline;
+}
+mid {
+  text-decoration: line-through;
+}
+ovl {
+  text-align: overline;
+}
+bold {
+  font-weight: bold;
+}
+italic {
+  font-style: italic;
+}
+/* Typography Styles */
+.text-headline-1 {
+  font-family: open_sans;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 40.0px;
+}
+@media (max-width: 1024px) {
+  .text-headline-1--tablet {
+    font-family: open_sans;
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 40.0px;
+  }
+}
+@media (max-width: 768px) {
+  .text-headline-1--mobile {
+    font-family: open_sans;
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 40.0px;
+  }
+}
+.text-headline-2 {
+  font-family: open_sans;
+  font-size: 39px;
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .text-headline-2--tablet {
+    font-family: open_sans;
+    font-size: 39px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  .text-headline-2--mobile {
+    font-family: open_sans;
+    font-size: 39px;
+    font-weight: 700;
+  }
+}
+.text-headline-3 {
+  font-family: open_sans;
+  font-size: 27px;
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .text-headline-3--tablet {
+    font-family: open_sans;
+    font-size: 27px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  .text-headline-3--mobile {
+    font-family: open_sans;
+    font-size: 27px;
+    font-weight: 700;
+  }
+}
+.text-h4-large-text {
+  font-family: open_sans;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 33.0px;
+}
+@media (max-width: 1024px) {
+  .text-h4-large-text--tablet {
+    font-family: open_sans;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 33.0px;
+  }
+}
+@media (max-width: 768px) {
+  .text-h4-large-text--mobile {
+    font-family: open_sans;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 33.0px;
+  }
+}
+.text-medium-text {
+  font-family: open_sans;
+  font-size: 19px;
+  line-height: 27.5px;
+}
+@media (max-width: 1024px) {
+  .text-medium-text--tablet {
+    font-family: open_sans;
+    font-size: 19px;
+    line-height: 27.5px;
+  }
+}
+@media (max-width: 768px) {
+  .text-medium-text--mobile {
+    font-family: open_sans;
+    font-size: 19px;
+    line-height: 27.5px;
+  }
+}
+.text-paragraph {
+  font-family: open_sans;
+  font-size: 16px;
+  line-height: 24.0px;
+}
+@media (max-width: 1024px) {
+  .text-paragraph--tablet {
+    font-family: open_sans;
+    font-size: 16px;
+    line-height: 24.0px;
+  }
+}
+@media (max-width: 768px) {
+  .text-paragraph--mobile {
+    font-family: open_sans;
+    font-size: 16px;
+    line-height: 24.0px;
+  }
+}
+.text-small-text {
+  font-family: open_sans;
+  font-size: 13px;
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .text-small-text--tablet {
+    font-family: open_sans;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  .text-small-text--mobile {
+    font-family: open_sans;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+.text-button {
+  font-family: open_sans;
+  font-size: 19px;
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .text-button--tablet {
+    font-family: open_sans;
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  .text-button--mobile {
+    font-family: open_sans;
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
+.orange .acc-button {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  background-color: var(--prm-primary_600);
+  color: var(--grey-white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.orange .acc-button:hover {
+  text-decoration: none;
+}
+.orange .acc-button__link-wrapper {
+  padding: 10px 10px;
+}
+.test .acc-button {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  background-color: var(--snd-secondary_700);
+  color: var(--grey-white);
+}
+.test .acc-button:hover {
+  text-decoration: none;
+}
+
+/* stylelint-enable */
