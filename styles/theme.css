@@ -195,18 +195,18 @@ italic {
   }
 }
 .text-other-1 {
-  font-family: montserrat;
+  font-family: metropolis_regular;
   font-weight: 600;
 }
 @media (max-width: 1024px) {
   .text-other-1--tablet {
-    font-family: montserrat;
+    font-family: metropolis_regular;
     font-weight: 600;
   }
 }
 @media (max-width: 768px) {
   .text-other-1--mobile {
-    font-family: montserrat;
+    font-family: metropolis_regular;
     font-weight: 600;
   }
 }
