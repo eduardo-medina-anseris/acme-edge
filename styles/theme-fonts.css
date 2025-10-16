@@ -4,31 +4,16 @@
   src: url('./fonts/theme-fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
-*[data-font=open_sans],
-*[data-font=open_sans] * {
-  font-family: 'open_sans' !important;
-}
-
 
 @font-face {
   font-family: 'lato_regular';
   src: url('./fonts/theme-fonts/Lato-Regular.ttf') format('truetype');
 }
 
-*[data-font=lato_regular],
-*[data-font=lato_regular] * {
-  font-family: 'lato_regular' !important;
-}
-
 
 @font-face {
   font-family: 'metropolis_regular';
   src: url('./fonts/theme-fonts/Metropolis-Regular.woff2') format('woff2');
-}
-
-*[data-font=metropolis_regular],
-*[data-font=metropolis_regular] * {
-  font-family: 'metropolis_regular' !important;
 }
 
 
@@ -39,22 +24,12 @@
   src: url('./fonts/theme-fonts/Metropolis-Medium.woff2') format('woff2');
 }
 
-*[data-font=metropolis_medium],
-*[data-font=metropolis_medium] * {
-  font-family: 'metropolis_medium' !important;
-}
-
 
 @font-face {
   font-family: 'metropolis_thin';
   font-weight: 100;
   font-style: normal;
   src: url('./fonts/theme-fonts/Metropolis-Thin.woff2') format('woff2');
-}
-
-*[data-font=metropolis_thin],
-*[data-font=metropolis_thin] * {
-  font-family: 'metropolis_thin' !important;
 }
 
 
@@ -65,11 +40,6 @@
   src: url('./fonts/theme-fonts/Metropolis-Bold.woff2') format('woff2');
 }
 
-*[data-font=metropolis_bold],
-*[data-font=metropolis_bold] * {
-  font-family: 'metropolis_bold' !important;
-}
-
 
 @font-face {
   font-family: 'metropolis_semi_bold';
@@ -78,22 +48,12 @@
   src: url('./fonts/theme-fonts/Metropolis-SemiBold.woff2') format('woff2');
 }
 
-*[data-font=metropolis_semi_bold],
-*[data-font=metropolis_semi_bold] * {
-  font-family: 'metropolis_semi_bold' !important;
-}
-
 
 @font-face {
   font-family: 'metropolis_light';
   font-weight: 300;
   font-style: normal;
   src: url('./fonts/theme-fonts/Metropolis-Light.woff2') format('woff2');
-}
-
-*[data-font=metropolis_light],
-*[data-font=metropolis_light] * {
-  font-family: 'metropolis_light' !important;
 }
 
 
