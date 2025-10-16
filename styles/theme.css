@@ -194,6 +194,32 @@ italic {
     font-weight: 700;
   }
 }
+.text-other-1 {
+  font-family: Arial;
+}
+@media (max-width: 1024px) {
+  .text-other-1--tablet {
+    font-family: Arial;
+  }
+}
+@media (max-width: 768px) {
+  .text-other-1--mobile {
+    font-family: Arial;
+  }
+}
+.text-other-2 {
+  font-family: lato_regular;
+}
+@media (max-width: 1024px) {
+  .text-other-2--tablet {
+    font-family: lato_regular;
+  }
+}
+@media (max-width: 768px) {
+  .text-other-2--mobile {
+    font-family: lato_regular;
+  }
+}
 .orange .acc-button {
   display: inline-flex;
   text-decoration: none;
