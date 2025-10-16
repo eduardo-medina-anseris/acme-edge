@@ -137,7 +137,8 @@ italic {
     line-height: 27.5px;
   }
 }
-.text-paragraph {
+.text-paragraph,
+* {
   font-family: open_sans;
   font-size: 16px;
   line-height: 24.0px;
@@ -246,7 +247,7 @@ italic {
   text-decoration: none;
   cursor: pointer;
   width: fit-content;
-  background-color: var(--snd-secondary_700);
+  background-color: var(--prm-primary_600);
   color: var(--grey-white);
 }
 .test .acc-button:hover {
