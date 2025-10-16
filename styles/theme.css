@@ -195,16 +195,19 @@ italic {
   }
 }
 .text-other-1 {
-  font-family: Arial;
+  font-family: montserrat;
+  font-weight: 600;
 }
 @media (max-width: 1024px) {
   .text-other-1--tablet {
-    font-family: Arial;
+    font-family: montserrat;
+    font-weight: 600;
   }
 }
 @media (max-width: 768px) {
   .text-other-1--mobile {
-    font-family: Arial;
+    font-family: montserrat;
+    font-weight: 600;
   }
 }
 .text-other-2 {
