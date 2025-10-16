@@ -176,7 +176,8 @@ italic {
     font-weight: 700;
   }
 }
-.text-button {
+.text-button,
+.acc-button {
   font-family: open_sans;
   font-size: 19px;
   font-weight: 700;
@@ -247,11 +248,19 @@ italic {
   text-decoration: none;
   cursor: pointer;
   width: fit-content;
-  background-color: var(--prm-primary_600);
+  background-color: var(--snd-secondary_700);
   color: var(--grey-white);
+  border-radius: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 9px;
+  padding-right: 9px;
 }
 .test .acc-button:hover {
   text-decoration: none;
+}
+.test .acc-button__link-wrapper {
+  padding: 12px 9px;
 }
 
 /* stylelint-enable */
