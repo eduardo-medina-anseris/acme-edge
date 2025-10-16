@@ -37,14 +37,14 @@ italic {
 }
 /* Typography Styles */
 .text-headline-1 {
-  font-family: open_sans;
+  font-family: metropolis_regular;
   font-size: 47px;
   font-weight: 700;
   line-height: 40.0px;
 }
 @media (max-width: 1024px) {
   .text-headline-1--tablet {
-    font-family: open_sans;
+    font-family: metropolis_regular;
     font-size: 47px;
     font-weight: 700;
     line-height: 40.0px;
@@ -52,7 +52,7 @@ italic {
 }
 @media (max-width: 768px) {
   .text-headline-1--mobile {
-    font-family: open_sans;
+    font-family: metropolis_regular;
     font-size: 47px;
     font-weight: 700;
     line-height: 40.0px;
