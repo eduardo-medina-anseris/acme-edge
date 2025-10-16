@@ -1,19 +1,19 @@
 /* stylelint-disable */
 @font-face {
   font-family: 'open_sans';
-  src: url('./fonts/theme-fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  src: url('../fonts/theme-fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
 
 @font-face {
   font-family: 'lato_regular';
-  src: url('./fonts/theme-fonts/Lato-Regular.ttf') format('truetype');
+  src: url('../fonts/theme-fonts/Lato-Regular.ttf') format('truetype');
 }
 
 
 @font-face {
   font-family: 'metropolis_regular';
-  src: url('./fonts/theme-fonts/Metropolis-Regular.woff2') format('woff2');
+  src: url('../fonts/theme-fonts/Metropolis-Regular.woff2') format('woff2');
 }
 
 
@@ -21,7 +21,7 @@
   font-family: 'metropolis_regular';
   font-weight: 500;
   font-style: normal;
-  src: url('./fonts/theme-fonts/Metropolis-Medium.woff2') format('woff2');
+  src: url('../fonts/theme-fonts/Metropolis-Medium.woff2') format('woff2');
 }
 
 
@@ -29,7 +29,7 @@
   font-family: 'metropolis_regular';
   font-weight: 100;
   font-style: normal;
-  src: url('./fonts/theme-fonts/Metropolis-Thin.woff2') format('woff2');
+  src: url('../fonts/theme-fonts/Metropolis-Thin.woff2') format('woff2');
 }
 
 
@@ -37,7 +37,7 @@
   font-family: 'metropolis_regular';
   font-weight: 800;
   font-style: normal;
-  src: url('./fonts/theme-fonts/Metropolis-Bold.woff2') format('woff2');
+  src: url('../fonts/theme-fonts/Metropolis-Bold.woff2') format('woff2');
 }
 
 
@@ -45,7 +45,7 @@
   font-family: 'metropolis_regular';
   font-weight: 600;
   font-style: normal;
-  src: url('./fonts/theme-fonts/Metropolis-SemiBold.woff2') format('woff2');
+  src: url('../fonts/theme-fonts/Metropolis-SemiBold.woff2') format('woff2');
 }
 
 
@@ -53,7 +53,7 @@
   font-family: 'metropolis_regular';
   font-weight: 300;
   font-style: normal;
-  src: url('./fonts/theme-fonts/Metropolis-Light.woff2') format('woff2');
+  src: url('../fonts/theme-fonts/Metropolis-Light.woff2') format('woff2');
 }
 
 
