@@ -2,7 +2,7 @@
     background-color: gray;
 }
 
-.banner-lf-important {
+.important .banner {
     background-color: orange;
     font-weight: bold;
 }

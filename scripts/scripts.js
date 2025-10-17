@@ -12,6 +12,10 @@ import {
   loadCSS,
 } from './aem.js';
 
+import {
+  decorateVariants,
+} from './theme-utils.js';
+
 /**
  * Moves all the attributes from a given elmenet to another given element.
  * @param {Element} from the element to copy attributes from
@@ -83,6 +87,7 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
+  decorateVariants(main);
   decorateBlocks(main);
 }
 
