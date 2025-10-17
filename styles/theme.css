@@ -258,6 +258,8 @@ italic {
 }
 .acc-button:hover {
   text-decoration: none;
+  color: var(--backgrounds-prueba);
+  background-color: var(--snd-secondary_600);
 }
 .acc-button__link-wrapper {
   padding: 12px 9px;
