@@ -228,7 +228,7 @@ body {
     font-family: lato_regular;
   }
 }
-.acc-button {
+.orange .acc-button {
   display: inline-flex;
   text-decoration: none;
   cursor: pointer;
@@ -240,10 +240,11 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-.acc-button:hover {
+.orange .acc-button:hover {
   text-decoration: none;
+  background-color: var(--prm-primary_400);
 }
-.acc-button__link-wrapper {
+.orange .acc-button__link-wrapper {
   padding: 10px 10px;
 }
 .test .acc-button {
@@ -266,6 +267,24 @@ body {
 }
 .test .acc-button__link-wrapper {
   padding: 12px 9px;
+}
+.boxed .acc-button {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  background-color: var(--grey-grey_500);
+  color: var(--backgrounds-prueba);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.boxed .acc-button:hover {
+  text-decoration: none;
+}
+.boxed .acc-button__link-wrapper {
+  padding: 20px 20px;
 }
 
 /* stylelint-enable */
