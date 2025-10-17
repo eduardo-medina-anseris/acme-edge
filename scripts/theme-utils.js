@@ -5,33 +5,41 @@
  * <p>Some content</p>
  * <p>[[variant: primary]]</p>
  *
- * When found, the variant (e.g. "primary") is added as a class
- * to the previous sibling element, and the marker element is removed.
+ * This optimized version scans only text nodes instead of all DOM elements.
  *
  * @param {HTMLElement} main - The root element to scan for variant markers.
  */
 export function decorateVariants(main) {
   if (!main) return;
 
-  // Select all elements that are direct or deep descendants of `main`
-  const elements = main.querySelectorAll('*');
+  // Create a TreeWalker to efficiently iterate only text nodes
+  const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
 
-  elements.forEach((el) => {
-    const text = el.textContent.trim();
-    const match = text.match(/^\[\[variant:\s*([^\]]+)\]\]$/);
+  const variantRegex = /^\s*\[\[variant:\s*([^\]]+)\]\]\s*$/;
+  const toRemove = [];
+
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    const text = node.nodeValue.trim();
+    const match = text.match(variantRegex);
 
     if (match) {
       const variantClass = match[1].trim();
-      const prev = el.previousElementSibling;
+      const parent = node.parentElement;
 
+      // Apply to previous sibling element
+      const prev = parent?.previousElementSibling;
       if (prev) {
         prev.classList.add(variantClass);
       }
 
-      // Remove the marker element from DOM
-      el.remove();
+      // Mark parent element for removal (we remove later to avoid messing traversal)
+      if (parent) toRemove.push(parent);
     }
-  });
+  }
+
+  // Remove all marker elements after traversal
+  toRemove.forEach((el) => el.remove());
 }
 
 export default decorateVariants;
