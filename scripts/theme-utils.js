@@ -28,7 +28,12 @@ export function decorateVariants(main) {
       const parent = node.parentElement;
 
       // Apply to previous sibling element
-      const prev = parent?.previousElementSibling;
+      let prev = parent?.previousElementSibling;
+
+      if (!prev && parent) { //when already wrapped by a div
+        prev = parent.parentElement?.previousElementSibling;
+      }
+
       if (prev) {
         prev.classList.add(variantClass);
       }
