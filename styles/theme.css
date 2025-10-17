@@ -272,7 +272,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   width: fit-content;
-  background-color: var(--backgrounds-general);
+  background-color: var(--grey-grey_500);
   color: var(--backgrounds-prueba);
 }
 .boxed .acc-button:hover {
