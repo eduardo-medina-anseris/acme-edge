@@ -160,20 +160,20 @@ h3 {
     line-height: 24.0px;
   }
 }
-.text-small-text {
+.text-small-paragraph {
   font-family: open_sans;
   font-size: 13px;
   font-weight: 700;
 }
 @media (max-width: 1024px) {
-  .text-small-text--tablet {
+  .text-small-paragraph--tablet {
     font-family: open_sans;
     font-size: 13px;
     font-weight: 700;
   }
 }
 @media (max-width: 768px) {
-  .text-small-text--mobile {
+  .text-small-paragraph--mobile {
     font-family: open_sans;
     font-size: 13px;
     font-weight: 700;
