@@ -36,7 +36,8 @@ italic {
   font-style: italic;
 }
 /* Typography Styles */
-.text-headline-1 {
+.text-headline-1,
+h1 {
   font-family: metropolis_regular;
   font-size: 47px;
   font-weight: 700;
@@ -58,7 +59,8 @@ italic {
     line-height: 40.0px;
   }
 }
-.text-headline-2 {
+.text-headline-2,
+h2 {
   font-family: open_sans;
   font-size: 39px;
   font-weight: 700;
@@ -77,7 +79,8 @@ italic {
     font-weight: 700;
   }
 }
-.text-headline-3 {
+.text-headline-3,
+h3 {
   font-family: open_sans;
   font-size: 27px;
   font-weight: 700;
