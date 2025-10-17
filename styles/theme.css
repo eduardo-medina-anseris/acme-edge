@@ -274,9 +274,16 @@ body {
   width: fit-content;
   background-color: var(--grey-grey_500);
   color: var(--backgrounds-prueba);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .boxed .acc-button:hover {
   text-decoration: none;
+}
+.boxed .acc-button__link-wrapper {
+  padding: 20px 20px;
 }
 
 /* stylelint-enable */
