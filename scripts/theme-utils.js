@@ -30,7 +30,7 @@ export function decorateVariants(main) {
       // Apply to previous sibling element
       let prev = parent?.previousElementSibling;
 
-      if (!prev && parent) { //when already wrapped by a div
+      if (!prev && parent) {
         prev = parent.parentElement?.previousElementSibling;
       }
 
