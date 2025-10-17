@@ -242,6 +242,7 @@ body {
 }
 .orange .acc-button:hover {
   text-decoration: none;
+  background-color: var(--prm-primary_400);
 }
 .orange .acc-button__link-wrapper {
   padding: 10px 10px;
