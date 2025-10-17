@@ -17,7 +17,7 @@
   --grey-grey_200: #ececec;
   --grey-grey_100: #f4f6f9;
   --grey-white: #ffffff;
-  --backgrounds-general: #009010;
+  --backgrounds-general: #dff2ff;
   --backgrounds-prueba: #111111;
 }
 und {
@@ -225,7 +225,7 @@ italic {
     font-family: lato_regular;
   }
 }
-.orange .acc-button {
+.acc-button {
   display: inline-flex;
   text-decoration: none;
   cursor: pointer;
@@ -237,13 +237,13 @@ italic {
   padding-left: 10px;
   padding-right: 10px;
 }
-.orange .acc-button:hover {
+.acc-button:hover {
   text-decoration: none;
 }
-.orange .acc-button__link-wrapper {
+.acc-button__link-wrapper {
   padding: 10px 10px;
 }
-.acc-button {
+.test .acc-button {
   display: inline-flex;
   text-decoration: none;
   cursor: pointer;
@@ -256,12 +256,12 @@ italic {
   padding-left: 9px;
   padding-right: 9px;
 }
-.acc-button:hover {
+.test .acc-button:hover {
   text-decoration: none;
   color: var(--backgrounds-prueba);
   background-color: var(--snd-secondary_600);
 }
-.acc-button__link-wrapper {
+.test .acc-button__link-wrapper {
   padding: 12px 9px;
 }
 
