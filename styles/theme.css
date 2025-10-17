@@ -225,7 +225,7 @@ italic {
     font-family: lato_regular;
   }
 }
-.orange .acc-button {
+.acc-button {
   display: inline-flex;
   text-decoration: none;
   cursor: pointer;
@@ -237,10 +237,10 @@ italic {
   padding-left: 10px;
   padding-right: 10px;
 }
-.orange .acc-button:hover {
+.acc-button:hover {
   text-decoration: none;
 }
-.orange .acc-button__link-wrapper {
+.acc-button__link-wrapper {
   padding: 10px 10px;
 }
 .test .acc-button {
