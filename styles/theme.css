@@ -228,7 +228,7 @@ body {
     font-family: lato_regular;
   }
 }
-.acc-button {
+.orange .acc-button {
   display: inline-flex;
   text-decoration: none;
   cursor: pointer;
@@ -240,10 +240,10 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-.acc-button:hover {
+.orange .acc-button:hover {
   text-decoration: none;
 }
-.acc-button__link-wrapper {
+.orange .acc-button__link-wrapper {
   padding: 10px 10px;
 }
 .test .acc-button {
@@ -266,6 +266,17 @@ body {
 }
 .test .acc-button__link-wrapper {
   padding: 12px 9px;
+}
+.boxed .acc-button {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  background-color: var(--backgrounds-general);
+  color: var(--backgrounds-prueba);
+}
+.boxed .acc-button:hover {
+  text-decoration: none;
 }
 
 /* stylelint-enable */
