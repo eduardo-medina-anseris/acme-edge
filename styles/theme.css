@@ -19,6 +19,8 @@
   --grey-white: #ffffff;
   --backgrounds-general: #e7e6e8;
   --backgrounds-prueba: #111111;
+  --header-background: #111111;
+  --header-foreground: #ffeaa4;
 }
 und {
   text-decoration: underline;
@@ -247,7 +249,7 @@ body {
 .orange .acc-button__link-wrapper {
   padding: 10px 10px;
 }
-.test .acc-button {
+.acc-button {
   display: inline-flex;
   text-decoration: none;
   cursor: pointer;
@@ -260,12 +262,12 @@ body {
   padding-left: 9px;
   padding-right: 9px;
 }
-.test .acc-button:hover {
+.acc-button:hover {
   text-decoration: none;
   color: var(--backgrounds-prueba);
   background-color: var(--snd-secondary_600);
 }
-.test .acc-button__link-wrapper {
+.acc-button__link-wrapper {
   padding: 12px 9px;
 }
 .boxed .acc-button {
