@@ -272,7 +272,8 @@ a {
     color: var(--prm-primary_600);
   }
 }
-.text-hyperlink-hover {
+.text-hyperlink-hover,
+a:hover {
   font-family: lato_regular;
   color: var(--prm-primary_300);
 }
