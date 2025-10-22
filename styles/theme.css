@@ -5,6 +5,7 @@
   --prm-primary_500: #f5821f;
   --prm-primary_400: #faa362;
   --prm-primary_300: #f9b788;
+  --prm-other: #ff4136;
   --snd-secondary_700: #b10dc9;
   --snd-secondary_600: #ffffff;
   --grey-black: #000000;
@@ -271,6 +272,22 @@ a {
     color: var(--prm-primary_600);
   }
 }
+.text-hyperlink-hover {
+  font-family: lato_regular;
+  color: var(--prm-primary_300);
+}
+@media (max-width: 1024px) {
+  .text-hyperlink-hover--tablet {
+    font-family: lato_regular;
+    color: var(--prm-primary_300);
+  }
+}
+@media (max-width: 768px) {
+  .text-hyperlink-hover--mobile {
+    font-family: lato_regular;
+    color: var(--prm-primary_300);
+  }
+}
 .orange .acc-button {
   display: inline-flex;
   text-decoration: none;
@@ -316,8 +333,9 @@ a {
   text-decoration: none;
   cursor: pointer;
   width: fit-content;
-  background-color: var(--grey-grey_500);
+  background-color: var(--header-foreground);
   color: var(--backgrounds-prueba);
+  border-radius: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -328,6 +346,15 @@ a {
 }
 .boxed .acc-button__link-wrapper {
   padding: 20px 20px;
+}
+.very_good .acc-button {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}
+.very_good .acc-button:hover {
+  text-decoration: none;
 }
 
 /* stylelint-enable */
