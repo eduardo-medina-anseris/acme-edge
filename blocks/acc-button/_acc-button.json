@@ -36,28 +36,20 @@
         },
         {
           "component": "select",
-          "name": "variant",
-          "label": "Variant",
+          "name": "linkType",
+          "label": "Type",
           "options": [
             {
               "name": "default",
               "value": ""
             },
             {
-              "name": "Orange",
-              "value": "orange"
+              "name": "primary",
+              "value": "primary"
             },
             {
-              "name": "Test",
-              "value": "test"
-            },
-            {
-              "name": "Black",
-              "value": "black"
-            },
-            {
-              "name": "Boxed",
-              "value": "boxed"
+              "name": "secondary",
+              "value": "secondary"
             }
           ]
         }
