@@ -136,6 +136,10 @@
           {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "black",
+            "value": "black"
           }
         ]
       }
