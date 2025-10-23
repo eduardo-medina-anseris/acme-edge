@@ -6,21 +6,12 @@ export default async function decorate(a) {
 
   if (a.href !== a.textContent && !a.querySelector('img')) {
     const editorBlock = a.closest('[data-aue-model="acc-button"]');
-    let wrapper = a.parentElement;
+    const wrapper = editorBlock || a.parentElement;
     let variant;
 
     if (editorBlock) {
       const variantEl = editorBlock.querySelector('[data-aue-prop="variant"]');
       variant = variantEl?.textContent.trim();
-
-      if (editorBlock !== wrapper) {
-        wrapper = document.createElement('p');
-        Array.from(editorBlock.attributes)
-          .filter((attr) => attr.name.startsWith('data-'))
-          .forEach((attr) => wrapper.setAttribute(attr.name, attr.value));
-        wrapper.appendChild(a);
-        editorBlock.replaceWith(wrapper);
-      }
     } else {
       const next = wrapper.nextElementSibling;
       if (next?.textContent.includes('variant:')) {
