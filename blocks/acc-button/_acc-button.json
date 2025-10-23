@@ -33,6 +33,33 @@
           "component": "text",
           "name": "linkTitle",
           "label": "Title"
+        },
+        {
+          "component": "select",
+          "name": "linkType",
+          "label": "Variant",
+          "options": [
+            {
+              "name": "default",
+              "value": ""
+            },
+            {
+              "name": "Orange",
+              "value": "orange"
+            },
+            {
+              "name": "Test",
+              "value": "test"
+            },
+            {
+              "name": "Black",
+              "value": "black"
+            },
+            {
+              "name": "Boxed",
+              "value": "boxed"
+            }
+          ]
         }
       ]
     }
