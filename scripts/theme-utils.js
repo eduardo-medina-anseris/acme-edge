@@ -36,6 +36,7 @@ export function decorateVariants(main) {
 
       if (prev) {
         prev.classList.add(variantClass);
+        prev.dataset.variant = variantClass;
       }
 
       // Mark parent element for removal (we remove later to avoid messing traversal)
