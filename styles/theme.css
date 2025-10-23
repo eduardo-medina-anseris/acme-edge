@@ -300,7 +300,7 @@ a:not(.acc-button):hover {
   text-decoration: none;
   cursor: pointer;
   width: fit-content;
-  background-color: var(--prm-primary_600);
+  background-color: var(--prm-primary_300);
   color: var(--grey-white);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -353,6 +353,26 @@ a:not(.acc-button):hover {
 }
 .boxed .acc-button__link-wrapper {
   padding: 20px 20px;
+}
+.black .acc-button {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  background-color: var(--grey-black);
+  color: var(--grey-white);
+  border-radius: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.black .acc-button:hover {
+  text-decoration: none;
+  background-color: var(--grey-grey_600);
+}
+.black .acc-button__link-wrapper {
+  padding: 4px 10px;
 }
 
 /* stylelint-enable */
