@@ -205,12 +205,16 @@ body {
   font-family: open_sans;
   font-size: 19px;
   font-weight: 700;
+  font-style: normal;
+  text-transform: none;
 }
 @media (max-width: 1024px) {
   .text-button--tablet {
     font-family: open_sans;
     font-size: 19px;
     font-weight: 700;
+    font-style: normal;
+    text-transform: none;
   }
 }
 @media (max-width: 768px) {
@@ -218,6 +222,8 @@ body {
     font-family: open_sans;
     font-size: 19px;
     font-weight: 700;
+    font-style: normal;
+    text-transform: none;
   }
 }
 .text-other-1 {
@@ -273,7 +279,7 @@ a {
   }
 }
 .text-hyperlink-hover,
-a:hover {
+a:not(.acc-button):hover {
   font-family: lato_regular;
   color: var(--prm-primary_300);
 }
@@ -289,7 +295,7 @@ a:hover {
     color: var(--prm-primary_300);
   }
 }
-.orange .acc-button {
+.acc-button {
   display: inline-flex;
   text-decoration: none;
   cursor: pointer;
@@ -301,14 +307,14 @@ a:hover {
   padding-left: 10px;
   padding-right: 10px;
 }
-.orange .acc-button:hover {
+.acc-button:hover {
   text-decoration: none;
   background-color: var(--prm-primary_400);
 }
-.orange .acc-button__link-wrapper {
+.acc-button__link-wrapper {
   padding: 10px 10px;
 }
-.acc-button {
+.test .acc-button {
   display: inline-flex;
   text-decoration: none;
   cursor: pointer;
@@ -321,12 +327,12 @@ a:hover {
   padding-left: 9px;
   padding-right: 9px;
 }
-.acc-button:hover {
+.test .acc-button:hover {
   text-decoration: none;
   color: var(--backgrounds-prueba);
   background-color: var(--snd-secondary_600);
 }
-.acc-button__link-wrapper {
+.test .acc-button__link-wrapper {
   padding: 12px 9px;
 }
 .boxed .acc-button {
@@ -347,15 +353,6 @@ a:hover {
 }
 .boxed .acc-button__link-wrapper {
   padding: 20px 20px;
-}
-.very_good .acc-button {
-  display: inline-flex;
-  text-decoration: none;
-  cursor: pointer;
-  width: fit-content;
-}
-.very_good .acc-button:hover {
-  text-decoration: none;
 }
 
 /* stylelint-enable */
