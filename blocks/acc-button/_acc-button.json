@@ -37,8 +37,8 @@
         },
         {
           "component": "select",
-          "name": "linkType",
-          "label": "Type",
+          "name": "variant",
+          "label": "Variant",
           "options": [
             {
               "name": "default",
