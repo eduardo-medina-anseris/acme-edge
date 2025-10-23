@@ -41,26 +41,29 @@ italic {
 /* Typography Styles */
 .text-headline-1,
 h1 {
-  font-family: metropolis_regular;
+  font-family: Times New Roman;
   font-size: 47px;
-  font-weight: 700;
+  font-weight: 100;
+  font-style: italic;
   line-height: 40.0px;
   color: var(--grey-black);
 }
 @media (max-width: 1024px) {
   .text-headline-1--tablet {
-    font-family: metropolis_regular;
+    font-family: Times New Roman;
     font-size: 47px;
-    font-weight: 700;
+    font-weight: 100;
+    font-style: italic;
     line-height: 40.0px;
     color: var(--grey-black);
   }
 }
 @media (max-width: 768px) {
   .text-headline-1--mobile {
-    font-family: metropolis_regular;
+    font-family: Times New Roman;
     font-size: 47px;
-    font-weight: 700;
+    font-weight: 100;
+    font-style: italic;
     line-height: 40.0px;
     color: var(--grey-black);
   }
