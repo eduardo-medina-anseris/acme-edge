@@ -9,8 +9,8 @@ export default function decorate(a) {
       const editorElem = a.closest('.acc-button');
 
       if (up.childNodes.length === 1 && !editorElem) { // Case for Word
-        a.className = 'acc-button'; // default
-        up.classList.add('acc-button-wrapper');
+        a.className = 'acc-button--link'; // default
+        up.classList.add('acc-button');
         const variants = getVariants();
         const cmpVariant = up.dataset.variant;
         if (cmpVariant) {
