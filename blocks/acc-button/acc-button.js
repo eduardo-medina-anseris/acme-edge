@@ -37,7 +37,7 @@ export default function decorate(a) {
 
         // 1. Mover la clase variante al rootElem (acc-button-wrapper)
         if (extraClassText) {
-          rootElem.classList.add(extraClassText);
+          editorElem.classList.add(extraClassText);
         }
 
         // 2. Reconfigurar el elemento 'a' con los nuevos datos
@@ -46,11 +46,6 @@ export default function decorate(a) {
         a.removeAttribute('data-block-status');
         a.textContent = newLinkText;
         a.title = newLinkTitle;
-
-        // 3. Garantizar que editorElem tiene el estado correcto (el valor original)
-        if (dataBlockStatusValue) {
-          editorElem.setAttribute('data-block-status', dataBlockStatusValue);
-        }
 
         // 4. Limpiar el contenido de editorElem (esto elimina todos los <div>s anidados)
         editorElem.innerHTML = '';
