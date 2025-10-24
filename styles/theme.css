@@ -212,18 +212,21 @@ body {
     color: var(--grey-black);
   }
 }
-.text-link {
+.text-link,
+a:not(.acc-button--link) {
   font-family: open_sans;
   font-size: 13px;
   font-weight: 500;
-  color: var(--grey-black);
+  font-style: italic;
+  color: var(--prm-primary_700);
 }
 @media (max-width: 1024px) {
   .text-link--tablet {
     font-family: open_sans;
     font-size: 13px;
     font-weight: 500;
-    color: var(--grey-black);
+    font-style: italic;
+    color: var(--prm-primary_700);
   }
 }
 @media (max-width: 768px) {
@@ -231,7 +234,8 @@ body {
     font-family: open_sans;
     font-size: 13px;
     font-weight: 500;
-    color: var(--grey-black);
+    font-style: italic;
+    color: var(--prm-primary_700);
   }
 }
 .text-button-text {
