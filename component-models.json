@@ -134,16 +134,20 @@
             "value": "orange"
           },
           {
-            "name": "test",
-            "value": "test"
-          },
-          {
             "name": "boxed",
             "value": "boxed"
           },
           {
             "name": "black",
             "value": "black"
+          },
+          {
+            "name": "the_purple",
+            "value": "the_purple"
+          },
+          {
+            "name": "again",
+            "value": "again"
           }
         ]
       }
