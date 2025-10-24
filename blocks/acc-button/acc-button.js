@@ -23,42 +23,33 @@ export default function decorate(a) {
       }
 
       if (up.childNodes.length === 1 && editorElem) { // Case for Universal editor
-        const originalRootElem = editorElem.parentElement;
+        const rootElem = editorElem.parentElement;
         const variantContainer = editorElem.lastElementChild;
         const extraClassText = variantContainer ? variantContainer.textContent.trim() : '';
-
-        const newWrapper = document.createElement('div');
-        newWrapper.classList.add('default-content-wrapper');
-
-        const classesToTransfer = Array.from(editorElem.classList).filter((c) => c !== 'acc-button');
-        originalRootElem.classList.add(...classesToTransfer);
+        const anchorText = a.textContent.trim();
 
         if (extraClassText) {
-          originalRootElem.classList.add(extraClassText);
+          rootElem.classList.add(extraClassText);
         }
 
-        const dataBlockName = editorElem.getAttribute('data-block-name');
-        const dataBlockStatus = editorElem.getAttribute('data-block-status');
-
-        if (dataBlockName) {
-          originalRootElem.setAttribute('data-block-name', dataBlockName);
-        }
-        if (dataBlockStatus) {
-          originalRootElem.setAttribute('data-block-status', dataBlockStatus);
-        }
-
-        a.className = 'acc-button';
+        // Ensure the <a> tag has the new desired class and preserved text
+        a.className = 'acc-button-link';
         a.removeAttribute('data-block-name');
         a.removeAttribute('data-block-status');
+        a.textContent = anchorText;
 
-        originalRootElem.innerHTML = '';
-        originalRootElem.appendChild(a);
+        // Force the correct data-block-status on editorElem to prevent "loaded" state
+        editorElem.setAttribute('data-block-status', 'initialized');
 
-        if (originalRootElem.parentElement) {
-          originalRootElem.parentElement.replaceChild(newWrapper, originalRootElem);
-        }
+        // Clean the editorElem (removes all the nested divs)
+        editorElem.innerHTML = '';
 
-        newWrapper.appendChild(originalRootElem);
+        // Reinsert the clean <a> tag directly into the editorElem
+        editorElem.appendChild(a);
+
+        // Clean the rootElem and reinsert editorElem
+        rootElem.innerHTML = '';
+        rootElem.appendChild(editorElem);
       }
     }
   }
