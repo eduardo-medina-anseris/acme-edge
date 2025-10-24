@@ -23,29 +23,42 @@ export default function decorate(a) {
       }
 
       if (up.childNodes.length === 1 && editorElem) { // Case for Universal editor
-        const rootElem = editorElem.parentElement;
-        const colorContainer = editorElem.lastElementChild;
-        const extraClassText = colorContainer ? colorContainer.textContent.trim() : '';
+        const originalRootElem = editorElem.parentElement;
+        const variantContainer = editorElem.lastElementChild;
+        const extraClassText = variantContainer ? variantContainer.textContent.trim() : '';
+
+        const newWrapper = document.createElement('div');
+        newWrapper.classList.add('default-content-wrapper');
+
+        const classesToTransfer = Array.from(editorElem.classList).filter((c) => c !== 'acc-button');
+        originalRootElem.classList.add(...classesToTransfer);
 
         if (extraClassText) {
-          rootElem.classList.add(extraClassText);
+          originalRootElem.classList.add(extraClassText);
         }
-
-        const classesToTransfer = Array.from(editorElem.classList);
-        a.classList.add(...classesToTransfer);
 
         const dataBlockName = editorElem.getAttribute('data-block-name');
         const dataBlockStatus = editorElem.getAttribute('data-block-status');
 
         if (dataBlockName) {
-          a.setAttribute('data-block-name', dataBlockName);
+          originalRootElem.setAttribute('data-block-name', dataBlockName);
         }
         if (dataBlockStatus) {
-          a.setAttribute('data-block-status', dataBlockStatus);
+          originalRootElem.setAttribute('data-block-status', dataBlockStatus);
         }
 
-        rootElem.innerHTML = '';
-        rootElem.appendChild(a);
+        a.className = 'acc-button';
+        a.removeAttribute('data-block-name');
+        a.removeAttribute('data-block-status');
+
+        originalRootElem.innerHTML = '';
+        originalRootElem.appendChild(a);
+
+        if (originalRootElem.parentElement) {
+          originalRootElem.parentElement.replaceChild(newWrapper, originalRootElem);
+        }
+
+        newWrapper.appendChild(originalRootElem);
       }
     }
   }
