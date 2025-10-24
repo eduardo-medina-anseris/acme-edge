@@ -213,7 +213,7 @@ body {
   }
 }
 .text-link,
-a:not(.acc-button--link) {
+a:not([class]) {
   font-family: open_sans;
   font-size: 13px;
   font-weight: 500;
