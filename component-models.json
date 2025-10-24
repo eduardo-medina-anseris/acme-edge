@@ -111,22 +111,14 @@
         "label": "Link"
       },
       {
-        "component": "fieldset",
-        "name": "buttonFieldset",
-        "label": "Button Text",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text",
-            "name": "buttonText",
-            "label": "Text"
-          },
-          {
-            "component": "text",
-            "name": "buttonTitle",
-            "label": "Title"
-          }
-        ]
+        "component": "text",
+        "name": "theLinkText",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "name": "theLinkTitle",
+        "label": "Title"
       },
       {
         "component": "select",
