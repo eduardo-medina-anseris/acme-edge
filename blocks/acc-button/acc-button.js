@@ -23,8 +23,6 @@ export default function decorate(a) {
 
       if (up.childNodes.length === 1 && editorElem && !a.classList.contains('acc-button--link')) { // Case for Universal editor
         const rootElem = editorElem.parentElement;
-        const dataBlockStatusValue = editorElem.getAttribute('data-block-status');
-
         // Safely get data from the children based on their expected indices (0-based)
         // The child with the link text is at index 1
         const newLinkText = (editorElem.children[1] && editorElem.children[1].textContent) ? editorElem.children[1].textContent.trim() : '';
