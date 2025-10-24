@@ -15,7 +15,7 @@ export default function decorate(a) {
         const cmpVariant = up.dataset.variant;
         if (cmpVariant) {
           const variantProperties = variants[cmpVariant];
-          if (variantProperties) {
+          if (variantProperties && variantProperties.typography) {
             up.classList.add(variantProperties.typography);
           }
         }
