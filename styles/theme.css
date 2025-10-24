@@ -25,6 +25,8 @@
   --grey-grey_100: #f4f6f9;
   --grey-white: #ffffff;
   --backgrounds-cafecito: #752e3b;
+  --header-background: #aaaaaa;
+  --header-foreground: #85144b;
 }
 und {
   text-decoration: underline;
