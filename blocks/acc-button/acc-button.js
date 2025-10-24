@@ -2,7 +2,6 @@ import getVariants from './variants.js';
 
 export default function decorate(a) {
   if (a.nodeName !== 'A') return;
-  a.title = a.title || a.textContent;
 
   if (a.href !== a.textContent) {
     if (!a.querySelector('img')) {
@@ -22,32 +21,44 @@ export default function decorate(a) {
         }
       }
 
-      if (up.childNodes.length === 1 && editorElem) { // Case for Universal editor
+      if (up.childNodes.length === 1 && editorElem && !a.classList.contains('acc-button--link')) { // Case for Universal editor
         const rootElem = editorElem.parentElement;
-        const variantContainer = editorElem.lastElementChild;
-        const extraClassText = variantContainer ? variantContainer.textContent.trim() : '';
-        const anchorText = a.textContent.trim();
+        const dataBlockStatusValue = editorElem.getAttribute('data-block-status');
 
+        // Safely get data from the children based on their expected indices (0-based)
+        // The child with the link text is at index 1
+        const newLinkText = (editorElem.children[1] && editorElem.children[1].textContent) ? editorElem.children[1].textContent.trim() : '';
+
+        // The child with the title text is at index 2
+        const newLinkTitle = (editorElem.children[2] && editorElem.children[2].textContent) ? editorElem.children[2].textContent.trim() : '';
+
+        // The child with the variant class ("black") is at index 3
+        const extraClassText = (editorElem.children[3] && editorElem.children[3].textContent) ? editorElem.children[3].textContent.trim() : '';
+
+        // 1. Mover la clase variante al rootElem (acc-button-wrapper)
         if (extraClassText) {
           rootElem.classList.add(extraClassText);
         }
 
-        // Ensure the <a> tag has the new desired class and preserved text
-        a.className = 'acc-button-link';
+        // 2. Reconfigurar el elemento 'a' con los nuevos datos
+        a.className = 'acc-button--link';
         a.removeAttribute('data-block-name');
         a.removeAttribute('data-block-status');
-        a.textContent = anchorText;
+        a.textContent = newLinkText;
+        a.title = newLinkTitle;
 
-        // Force the correct data-block-status on editorElem to prevent "loaded" state
-        editorElem.setAttribute('data-block-status', 'initialized');
+        // 3. Garantizar que editorElem tiene el estado correcto (el valor original)
+        if (dataBlockStatusValue) {
+          editorElem.setAttribute('data-block-status', dataBlockStatusValue);
+        }
 
-        // Clean the editorElem (removes all the nested divs)
+        // 4. Limpiar el contenido de editorElem (esto elimina todos los <div>s anidados)
         editorElem.innerHTML = '';
 
-        // Reinsert the clean <a> tag directly into the editorElem
+        // 5. Reinsertar el 'a' limpio directamente dentro del editorElem
         editorElem.appendChild(a);
 
-        // Clean the rootElem and reinsert editorElem
+        // 6. Limpiar el contenido de rootElem y reinsertar editorElem
         rootElem.innerHTML = '';
         rootElem.appendChild(editorElem);
       }
