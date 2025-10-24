@@ -132,6 +132,11 @@ export default async function decorate(block) {
     brandLink.closest('.button-container').className = '';
   }
 
+  const navLinks = nav.querySelectorAll('a');
+  if (navLinks) {
+    navLinks.forEach((a) => a.classList.add('text-paragraph'));
+  }
+
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
