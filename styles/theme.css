@@ -170,6 +170,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24.0px;
+  text-decoration: none;
   color: var(--grey-black);
 }
 @media (max-width: 1024px) {
@@ -178,6 +179,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 24.0px;
+    text-decoration: none;
     color: var(--grey-black);
   }
 }
@@ -187,6 +189,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 24.0px;
+    text-decoration: none;
     color: var(--grey-black);
   }
 }
@@ -215,26 +218,29 @@ body {
 .text-link,
 a:not([class]) {
   font-family: open_sans;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
+  text-decoration: underline;
   color: var(--prm-primary_700);
 }
 @media (max-width: 1024px) {
   .text-link--tablet {
     font-family: open_sans;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
+    text-decoration: underline;
     color: var(--prm-primary_700);
   }
 }
 @media (max-width: 768px) {
   .text-link--mobile {
     font-family: open_sans;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
+    text-decoration: underline;
     color: var(--prm-primary_700);
   }
 }
