@@ -24,9 +24,9 @@
   --grey-grey_200: #ececec;
   --grey-grey_100: #f4f6f9;
   --grey-white: #ffffff;
-  --backgrounds-cafecito: #752e3b;
-  --header-background: #aaaaaa;
-  --header-foreground: #85144b;
+  --backgrounds-general: #f4f6f9;
+  --header-background: #661c69;
+  --header-foreground: #ffffff;
 }
 und {
   text-decoration: underline;
@@ -44,7 +44,8 @@ italic {
   font-style: italic;
 }
 /* Typography Styles */
-.text-headline-1 {
+.text-headline-1,
+h1 {
   font-family: open_sans;
   font-size: 47px;
   font-weight: 700;
@@ -69,7 +70,8 @@ italic {
     color: var(--grey-black);
   }
 }
-.text-headline-2 {
+.text-headline-2,
+h2 {
   font-family: open_sans;
   font-size: 39px;
   font-weight: 700;
@@ -94,7 +96,8 @@ italic {
     color: var(--grey-black);
   }
 }
-.text-headline-3 {
+.text-headline-3,
+h3 {
   font-family: open_sans;
   font-size: 27px;
   font-weight: 700;
@@ -116,7 +119,8 @@ italic {
     color: var(--grey-black);
   }
 }
-.text-h4-large-text {
+.text-h4-large-text,
+h4 {
   font-family: open_sans;
   font-size: 23px;
   font-weight: 400;
@@ -160,7 +164,8 @@ italic {
     color: var(--grey-black);
   }
 }
-.text-paragraph {
+.text-paragraph,
+p {
   font-family: open_sans;
   font-size: 16px;
   font-weight: 400;
