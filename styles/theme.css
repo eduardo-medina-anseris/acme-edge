@@ -297,11 +297,12 @@ a:not(.acc-button--link):hover {
     color: var(--prm-primary_300);
   }
 }
-.acc-button {
-  display: inline-flex;
+.acc-button--link {
+  width: fit-content;
+  height: 100%;
+  display: block;
   text-decoration: none;
   cursor: pointer;
-  width: fit-content;
   background-color: var(--prm-primary_300);
   color: var(--grey-white);
   padding-top: 10px;
@@ -309,18 +310,16 @@ a:not(.acc-button--link):hover {
   padding-left: 10px;
   padding-right: 10px;
 }
-.acc-button:hover {
+.acc-button--link:hover {
   text-decoration: none;
   background-color: var(--prm-primary_400);
 }
-.acc-button__link-wrapper {
-  padding: 10px 10px;
-}
-.test .acc-button {
-  display: inline-flex;
+.test .acc-button--link {
+  width: fit-content;
+  height: 100%;
+  display: block;
   text-decoration: none;
   cursor: pointer;
-  width: fit-content;
   background-color: var(--snd-secondary_700);
   color: var(--grey-white);
   border-radius: 5px;
@@ -329,19 +328,17 @@ a:not(.acc-button--link):hover {
   padding-left: 9px;
   padding-right: 9px;
 }
-.test .acc-button:hover {
+.test .acc-button--link:hover {
   text-decoration: none;
   color: var(--backgrounds-prueba);
   background-color: var(--snd-secondary_600);
 }
-.test .acc-button__link-wrapper {
-  padding: 12px 9px;
-}
-.boxed .acc-button {
-  display: inline-flex;
+.boxed .acc-button--link {
+  width: fit-content;
+  height: 100%;
+  display: block;
   text-decoration: none;
   cursor: pointer;
-  width: fit-content;
   background-color: var(--header-foreground);
   color: var(--grey-grey_600);
   border-radius: 0px;
@@ -350,17 +347,15 @@ a:not(.acc-button--link):hover {
   padding-left: 20px;
   padding-right: 20px;
 }
-.boxed .acc-button:hover {
+.boxed .acc-button--link:hover {
   text-decoration: none;
 }
-.boxed .acc-button__link-wrapper {
-  padding: 20px 20px;
-}
-.black .acc-button {
-  display: inline-flex;
+.black .acc-button--link {
+  width: fit-content;
+  height: 100%;
+  display: block;
   text-decoration: none;
   cursor: pointer;
-  width: fit-content;
   background-color: var(--grey-black);
   color: var(--grey-white);
   border-radius: 20px;
@@ -369,12 +364,9 @@ a:not(.acc-button--link):hover {
   padding-left: 10px;
   padding-right: 10px;
 }
-.black .acc-button:hover {
+.black .acc-button--link:hover {
   text-decoration: none;
   background-color: var(--grey-grey_600);
-}
-.black .acc-button__link-wrapper {
-  padding: 4px 10px;
 }
 
 /* stylelint-enable */
