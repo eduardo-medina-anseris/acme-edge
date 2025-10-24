@@ -49,20 +49,24 @@
               "value": "orange"
             },
             {
-              "name": "boxed",
-              "value": "boxed"
+              "name": "purple",
+              "value": "purple"
             },
             {
               "name": "black",
               "value": "black"
             },
             {
-              "name": "the_purple",
-              "value": "the_purple"
+              "name": "white-outline",
+              "value": "white-outline"
             },
             {
-              "name": "link",
-              "value": "link"
+              "name": "white",
+              "value": "white"
+            },
+            {
+              "name": "outline",
+              "value": "outline"
             }
           ]
         }
