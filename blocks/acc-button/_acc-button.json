@@ -37,7 +37,7 @@
         },
         {
           "component": "select",
-          "name": "variant",
+          "name": "buttonVariant",
           "label": "Variant",
           "options": [
             {
