@@ -107,7 +107,7 @@
     "fields": [
       {
         "component": "aem-content",
-        "name": "link",
+        "name": "buttonLink",
         "label": "Link"
       },
       {
