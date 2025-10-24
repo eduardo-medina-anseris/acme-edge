@@ -360,5 +360,16 @@ a:not(.acc-button--link):hover {
 .the_purple .acc-button--link:hover {
   text-decoration: none;
 }
+.again .acc-button--link {
+  width: fit-content;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--prm-other);
+}
+.again .acc-button--link:hover {
+  text-decoration: none;
+}
 
 /* stylelint-enable */
