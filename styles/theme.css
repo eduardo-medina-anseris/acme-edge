@@ -366,6 +366,7 @@ a:not(.acc-button--link):hover {
   display: block;
   text-decoration: none;
   cursor: pointer;
+  background-color: var(--backgrounds-general);
   color: var(--prm-other);
 }
 .link .acc-button--link:hover {
