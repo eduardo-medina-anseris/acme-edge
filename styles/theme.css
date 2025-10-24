@@ -203,8 +203,7 @@ body {
     font-weight: 700;
   }
 }
-.text-button,
-.acc-button {
+.text-button {
   font-family: open_sans;
   font-size: 19px;
   font-weight: 700;
@@ -259,7 +258,7 @@ body {
   }
 }
 .text-hyperlink,
-a {
+a:not(.acc-button--link) {
   font-family: lato_regular;
   font-size: 16px;
   font-style: italic;
@@ -282,7 +281,7 @@ a {
   }
 }
 .text-hyperlink-hover,
-a:not(.acc-button):hover {
+a:not(.acc-button--link):hover {
   font-family: lato_regular;
   color: var(--prm-primary_300);
 }
@@ -344,7 +343,7 @@ a:not(.acc-button):hover {
   cursor: pointer;
   width: fit-content;
   background-color: var(--header-foreground);
-  color: var(--backgrounds-prueba);
+  color: var(--grey-grey_600);
   border-radius: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
