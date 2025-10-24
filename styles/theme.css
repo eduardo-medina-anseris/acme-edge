@@ -303,7 +303,7 @@ a:not(.acc-button--link):hover {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: var(--prm-primary_300);
+  background-color: var(--prm-primary_700);
   color: var(--grey-white);
   padding-top: 10px;
   padding-bottom: 10px;
