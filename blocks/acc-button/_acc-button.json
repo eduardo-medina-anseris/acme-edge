@@ -27,6 +27,7 @@
         },
         {
           "component": "fieldset",
+          "name": "buttonFieldset",
           "label": "Button Text",
           "collapsible": true,
           "fields": [
