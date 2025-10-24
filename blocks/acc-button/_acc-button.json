@@ -27,12 +27,12 @@
         },
         {
           "component": "text",
-          "name": "linkText",
+          "name": "buttonText",
           "label": "Text"
         },
         {
           "component": "text",
-          "name": "linkTitle",
+          "name": "buttonTitle",
           "label": "Title"
         },
         {
