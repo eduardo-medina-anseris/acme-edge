@@ -130,12 +130,16 @@
             "value": ""
           },
           {
-            "name": "primary",
-            "value": "primary"
+            "name": "orange",
+            "value": "orange"
           },
           {
-            "name": "secondary",
-            "value": "secondary"
+            "name": "test",
+            "value": "test"
+          },
+          {
+            "name": "boxed",
+            "value": "boxed"
           },
           {
             "name": "black",
