@@ -271,7 +271,6 @@ a:not([class]) {
   width: fit-content;
   height: 100%;
   display: block;
-  text-decoration: none;
   cursor: pointer;
   position: relative;
   background-color: var(--prm-primary_600);
@@ -290,7 +289,6 @@ a:not([class]) {
   padding-right: 24px;
 }
 .orange .acc-button--link:hover {
-  text-decoration: none;
   color: var(--grey-white);
   background-color: var(--prm-primary_500);
 }
@@ -299,7 +297,6 @@ a:not([class]) {
   width: fit-content;
   height: 100%;
   display: block;
-  text-decoration: none;
   cursor: pointer;
   position: relative;
   background-color: var(--snd-secondary_500);
@@ -318,7 +315,6 @@ a:not([class]) {
   padding-right: 24px;
 }
 .purple .acc-button--link:hover {
-  text-decoration: none;
   color: var(--grey-white);
   background-color: var(--snd-secondary_600);
 }
@@ -327,7 +323,6 @@ a:not([class]) {
   width: fit-content;
   height: 100%;
   display: block;
-  text-decoration: none;
   cursor: pointer;
   position: relative;
   background-color: var(--grey-grey_700);
@@ -346,7 +341,6 @@ a:not([class]) {
   padding-right: 24px;
 }
 .black .acc-button--link:hover {
-  text-decoration: none;
   color: var(--grey-white);
   background-color: var(--grey-grey_800);
 }
@@ -355,7 +349,6 @@ a:not([class]) {
   width: fit-content;
   height: 100%;
   display: block;
-  text-decoration: none;
   cursor: pointer;
   position: relative;
   background-color: var(--grey-white);
@@ -390,7 +383,6 @@ a:not([class]) {
   border-left-color: var(--grey-grey_700);
 }
 .white-outline .acc-button--link:hover {
-  text-decoration: none;
   color: var(--grey-grey_700);
   background-color: var(--grey-white);
 }
@@ -405,7 +397,6 @@ a:not([class]) {
   width: fit-content;
   height: 100%;
   display: block;
-  text-decoration: none;
   cursor: pointer;
   position: relative;
   background-color: var(--grey-white);
@@ -424,7 +415,6 @@ a:not([class]) {
   padding-right: 24px;
 }
 .white .acc-button--link:hover {
-  text-decoration: none;
   color: var(--grey-grey_700);
   background-color: var(--grey-grey_100);
 }
@@ -433,7 +423,6 @@ a:not([class]) {
   width: fit-content;
   height: 100%;
   display: block;
-  text-decoration: none;
   cursor: pointer;
   position: relative;
   color: var(--grey-white);
@@ -467,7 +456,6 @@ a:not([class]) {
   border-left-color: var(--grey-white);
 }
 .outline .acc-button--link:hover {
-  text-decoration: none;
   color: var(--grey-white);
 }
 
