@@ -13,17 +13,6 @@ export default function getVariants() {
         "sling:resourceType": "themes/components/elements/acc/separator",
         "_charset_": "UTF-8"
       },
-      "small_separator": {
-        "jcr:primaryType": "nt:unstructured",
-        "separation": "20",
-        "lineColor": "",
-        "jcr:lastModifiedBy": "",
-        "componentVariantTitle": "Small Separator",
-        "lineHeight": "",
-        "jcr:lastModified": "",
-        "sling:resourceType": "themes/components/elements/acc/separator",
-        "_charset_": "UTF-8"
-      },
       "gray_line": {
         "jcr:primaryType": "nt:unstructured",
         "separation": "20",
@@ -31,6 +20,17 @@ export default function getVariants() {
         "jcr:lastModifiedBy": "",
         "componentVariantTitle": "Gray Line",
         "lineHeight": "1",
+        "jcr:lastModified": "",
+        "sling:resourceType": "themes/components/elements/acc/separator",
+        "_charset_": "UTF-8"
+      },
+      "small": {
+        "jcr:primaryType": "nt:unstructured",
+        "separation": "20",
+        "lineColor": "",
+        "jcr:lastModifiedBy": "",
+        "componentVariantTitle": "Small",
+        "lineHeight": "",
         "jcr:lastModified": "",
         "sling:resourceType": "themes/components/elements/acc/separator",
         "_charset_": "UTF-8"
