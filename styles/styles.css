@@ -28,8 +28,15 @@ footer .footer[data-block-status="loaded"] {
   visibility: visible;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
 
-p,
 dl,
 ol,
 ul,
