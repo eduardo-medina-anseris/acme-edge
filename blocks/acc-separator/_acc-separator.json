@@ -33,6 +33,18 @@
             {
               "name": "default",
               "value": ""
+            },
+            {
+              "name": "default",
+              "value": "default"
+            },
+            {
+              "name": "small_separator",
+              "value": "small_separator"
+            },
+            {
+              "name": "gray_line",
+              "value": "gray_line"
             }
           ]
         }
