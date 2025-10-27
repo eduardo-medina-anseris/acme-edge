@@ -67,6 +67,10 @@
             {
               "name": "outline",
               "value": "outline"
+            },
+            {
+              "name": "white-outline-medium",
+              "value": "white-outline-medium"
             }
           ]
         }
