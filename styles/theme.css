@@ -278,7 +278,7 @@ a:not([class]) {
   border-radius: 48px;
   border-style: solid;
   border-color: transparent;
-  /* reserve space to prevent layout shift */
+  border: none;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -300,7 +300,7 @@ a:not([class]) {
   border-radius: 48px;
   border-style: solid;
   border-color: transparent;
-  /* reserve space to prevent layout shift */
+  border: none;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -322,7 +322,7 @@ a:not([class]) {
   border-radius: 48px;
   border-style: solid;
   border-color: transparent;
-  /* reserve space to prevent layout shift */
+  border: none;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -344,7 +344,7 @@ a:not([class]) {
   border-radius: 48px;
   border-style: solid;
   border-color: transparent;
-  /* reserve space to prevent layout shift */
+  border: none;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -388,7 +388,7 @@ a:not([class]) {
   border-radius: 48px;
   border-style: solid;
   border-color: transparent;
-  /* reserve space to prevent layout shift */
+  border: none;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -409,7 +409,7 @@ a:not([class]) {
   border-radius: 48px;
   border-style: solid;
   border-color: transparent;
-  /* reserve space to prevent layout shift */
+  border: none;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
