@@ -158,6 +158,43 @@
     ]
   },
   {
+    "id": "acc-title",
+    "fields": [
+      {
+        "component": "text",
+        "name": "titleText",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "variant",
+        "label": "Variant",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "large",
+            "value": "large"
+          },
+          {
+            "name": "medium",
+            "value": "medium"
+          },
+          {
+            "name": "small",
+            "value": "small"
+          },
+          {
+            "name": "pretitle",
+            "value": "pretitle"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "banner",
     "fields": [
       {
