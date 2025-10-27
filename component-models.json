@@ -175,20 +175,12 @@
             "value": ""
           },
           {
-            "name": "large",
-            "value": "large"
+            "name": "heading_1",
+            "value": "heading_1"
           },
           {
-            "name": "medium",
-            "value": "medium"
-          },
-          {
-            "name": "small",
-            "value": "small"
-          },
-          {
-            "name": "pretitle",
-            "value": "pretitle"
+            "name": "heading_2",
+            "value": "heading_2"
           }
         ]
       }
