@@ -158,6 +158,27 @@
     ]
   },
   {
+    "id": "acc-separator",
+    "fields": [
+      {
+        "component": "text",
+        "name": "separation",
+        "label": "Size in pixels"
+      },
+      {
+        "component": "select",
+        "name": "variant",
+        "label": "Variant",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "acc-title",
     "fields": [
       {

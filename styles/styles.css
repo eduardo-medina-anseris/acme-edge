@@ -40,6 +40,15 @@ blockquote {
 }
 
 
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: inherit;
+}
+
 pre {
   padding: 16px;
   border-radius: 8px;
