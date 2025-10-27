@@ -2,9 +2,9 @@ import getVariants from './variants.js';
 
 export default function decorate(a) {
   if (a.nodeName !== 'A') return;
-
   if (a.href !== a.textContent) {
-    if (!a.querySelector('img')) {
+    const linkedImage = a.querySelector('img');
+    if (!linkedImage || linkedImage.dataset.iconName) {
       const up = a.parentElement;
       const editorElem = a.closest('.acc-button');
 
