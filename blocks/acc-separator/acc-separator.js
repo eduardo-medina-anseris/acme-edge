@@ -1,12 +1,13 @@
-import getVariants from './variants.js';
+import {
+  applyVariantAttributes,
+} from '../../scripts/theme-utils.js';
 
 export default function decorate(block) {
   const blockSettings = {};
 
   const pairContainers = block.querySelectorAll(':scope > div');
 
-  // 2. Iterar sobre cada contenedor para extraer la clave y el valor
-  pairContainers.forEach(container => {
+  pairContainers.forEach((container) => {
     const paragraphs = container.querySelectorAll('p');
 
     if (paragraphs.length >= 2) {
@@ -21,9 +22,16 @@ export default function decorate(block) {
   if (blockSettings.separation) {
     hr.style.height = blockSettings.separation;
   }
+  const newBlock = document.createElement('div');
+  applyVariantAttributes(newBlock, block);
 
+  const wrapperDiv = block.parentElement;
+
+  if (blockSettings.variant && !newBlock.dataset.variant) {
+    newBlock.dataset.variant = blockSettings.variant;
+    wrapperDiv.classList.add(blockSettings.variant);
+  }
 
   block.innerHTML = '';
   block.append(hr);
-
 }
