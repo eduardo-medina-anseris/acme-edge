@@ -6,9 +6,13 @@
   align-items: stretch;
 }
 
+.information-box {
+  width: 100%;
+}
+
 .information-box-left {
   border-radius: 30px;
-  flex: 0 0 75%;
+  width: 100%;
   display: flex;
   gap: 20px;
   background-color: var(--grey-grey_200);
@@ -35,7 +39,7 @@
 
 .information-box-right {
   border-radius: 16px;
-  flex: 0 0 25%;
+  width: 300px;
   display: flex;             /* turn into flex container */
   flex-direction: column;    /* stack children vertically */
   justify-content: center;   /* vertical centering */
