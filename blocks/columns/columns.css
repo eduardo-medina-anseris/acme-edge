@@ -31,3 +31,10 @@
     order: unset;
   }
 }
+
+
+.white-and-margins.columns > div > div {
+  padding: 40px;
+  border-radius: 30px;
+  background: var(--grey-white);
+}

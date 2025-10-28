@@ -40,7 +40,7 @@
 }
 
 /* Responsive styles */
-@media (width >= 900px) {
+@media (width < 900px) {
   .hero-promotion-block {
     padding: 40px;
   }
