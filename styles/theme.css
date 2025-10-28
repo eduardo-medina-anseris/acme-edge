@@ -416,6 +416,7 @@ a:not([class]) {
   align-items: center;
   cursor: pointer;
   position: relative;
+  gap: 8px;
   background-color: var(--grey-white);
   color: var(--grey-grey_700);
   border-radius: 48px;
@@ -432,7 +433,7 @@ a:not([class]) {
   display: flex;
 }
 .white-outline .acc-button--link .icon img {
-  width: 10px;
+  width: 24px;
 }
 .white-outline .acc-button--link::after {
   content: '';
