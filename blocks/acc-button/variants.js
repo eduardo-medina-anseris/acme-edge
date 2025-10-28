@@ -2,9 +2,6 @@
 export default function getVariants() {
   return {
       "orange": {
-        "backgroundColorActive": "",
-        "backgroundColor": "--prm-primary_600",
-        "borderLeftHoverColor": "",
         "borderColor": "",
         "mobileAlignment": "left",
         "borderBottomSize": "",
@@ -63,13 +60,12 @@ export default function getVariants() {
         "jcr:lastModified": "",
         "buttonText": "Conoce más",
         "backgroundColorHover": "--prm-primary_500",
-        "itemsGap": "8"
+        "itemsGap": "8",
+        "backgroundColorActive": "",
+        "backgroundColor": "--prm-primary_600",
+        "borderLeftHoverColor": ""
       },
       "purple": {
-        "tabletWidth": "fit",
-        "desktopAlignment": "left",
-        "hideOnTablet": "false",
-        "typography": "text-button-text",
         "tabletAlignment": "left",
         "borderColorDisabled": "",
         "borderColorHover": "",
@@ -114,13 +110,13 @@ export default function getVariants() {
         "borderTopSize": "",
         "jcr:primaryType": "nt:unstructured",
         "borderTopHoverSize": "",
-        "textColorHover": "--grey-white"
-      },
-      "black": {
+        "textColorHover": "--grey-white",
         "tabletWidth": "fit",
         "desktopAlignment": "left",
         "hideOnTablet": "false",
-        "typography": "text-button-text",
+        "typography": "text-button-text"
+      },
+      "black": {
         "tabletAlignment": "left",
         "borderColorDisabled": "",
         "borderColorHover": "",
@@ -165,12 +161,13 @@ export default function getVariants() {
         "borderTopSize": "",
         "jcr:primaryType": "nt:unstructured",
         "borderTopHoverSize": "",
-        "textColorHover": "--grey-white"
+        "textColorHover": "--grey-white",
+        "tabletWidth": "fit",
+        "desktopAlignment": "left",
+        "hideOnTablet": "false",
+        "typography": "text-button-text"
       },
       "white-outline": {
-        "backgroundColorActive": "",
-        "backgroundColor": "--grey-white",
-        "borderLeftHoverColor": "",
         "borderColor": "--grey-black",
         "mobileAlignment": "left",
         "borderBottomSize": "1",
@@ -228,12 +225,12 @@ export default function getVariants() {
         "jcr:lastModified": "",
         "buttonText": "Conoce más",
         "backgroundColorHover": "--grey-white",
-        "itemsGap": "8"
+        "itemsGap": "8",
+        "backgroundColorActive": "",
+        "backgroundColor": "--grey-white",
+        "borderLeftHoverColor": ""
       },
       "white": {
-        "borderBottomColor": "",
-        "backgroundColorHover": "--grey-grey_100",
-        "textColorActive": "",
         "backgroundColorActive": "",
         "componentVariantTitle": "White",
         "borderLeftColor": "",
@@ -287,12 +284,12 @@ export default function getVariants() {
         "secondIconHover": "",
         "borderTopColor": "",
         "jcr:lastModifiedBy": "",
-        "buttonText": "Conoce más"
+        "buttonText": "Conoce más",
+        "borderBottomColor": "",
+        "backgroundColorHover": "--grey-grey_100",
+        "textColorActive": ""
       },
       "outline": {
-        "borderBottomColor": "--grey-white",
-        "backgroundColorHover": "",
-        "textColorActive": "",
         "backgroundColorActive": "",
         "componentVariantTitle": "Outline",
         "borderLeftColor": "--grey-white",
@@ -346,13 +343,12 @@ export default function getVariants() {
         "secondIconHover": "",
         "borderTopColor": "--grey-white",
         "jcr:lastModifiedBy": "",
-        "buttonText": "Conoce más"
+        "buttonText": "Conoce más",
+        "borderBottomColor": "--grey-white",
+        "backgroundColorHover": "",
+        "textColorActive": ""
       },
       "white-outline-medium": {
-        "_charset_": "UTF-8",
-        "borderLeftColor": "--grey-grey_700",
-        "hideOnDesktop": "false",
-        "desktopAlignment": "left",
         "hideOnMobile": "false",
         "borderRadius": "48",
         "backgroundColorActive": "",
@@ -409,17 +405,13 @@ export default function getVariants() {
         "borderLeftHoverSize": "2",
         "itemsGap": "4",
         "sling:resourceType": "themes/components/elements/acc/button",
-        "paddingBottomTop": "16"
+        "paddingBottomTop": "16",
+        "_charset_": "UTF-8",
+        "borderLeftColor": "--grey-grey_700",
+        "hideOnDesktop": "false",
+        "desktopAlignment": "left"
       },
       "home_button": {
-        "rightIcon": "",
-        "textColorDisabled": "",
-        "textColorActive": "",
-        "jcr:lastModified": "",
-        "backgroundColorDisabled": "",
-        "_charset_": "UTF-8",
-        "borderTopColor": "",
-        "iconsSize": "32",
         "borderTopSize": "",
         "borderRightColor": "",
         "mobileWidth": "fit",
@@ -459,7 +451,65 @@ export default function getVariants() {
         "paddingLeftRight": "40",
         "hideOnDesktop": "false",
         "borderBottomHoverColor": "",
-        "backgroundColorActive": ""
+        "backgroundColorActive": "",
+        "rightIcon": "",
+        "textColorDisabled": "",
+        "textColorActive": "",
+        "jcr:lastModified": "",
+        "backgroundColorDisabled": "",
+        "_charset_": "UTF-8",
+        "borderTopColor": "",
+        "iconsSize": "32"
+      },
+      "orange-underline": {
+        "borderTopSize": "0",
+        "borderRightColor": "",
+        "mobileWidth": "fit",
+        "borderLeftSize": "0",
+        "borderRadius": "0",
+        "desktopWidth": "fit",
+        "buttonText": "Ver más",
+        "componentVariantTitle": "Orange-Underline",
+        "textColor": "--prm-primary_600",
+        "jcr:lastModifiedBy": "",
+        "textColorHover": "--prm-primary_600",
+        "borderRightHoverColor": "",
+        "mobileAlignment": "left",
+        "borderBottomSize": "1",
+        "jcr:primaryType": "nt:unstructured",
+        "borderLeftColor": "",
+        "tabletAlignment": "left",
+        "hideOnTablet": "false",
+        "itemsGap": "8",
+        "sling:resourceType": "themes/components/elements/acc/button",
+        "borderTopHoverSize": "",
+        "backgroundColorHover": "--grey-white",
+        "borderRightSize": "0",
+        "borderLeftHoverColor": "",
+        "backgroundColor": "--grey-white",
+        "leftIcon": "",
+        "typography": "text-button-text-small",
+        "borderBottomHoverSize": "2",
+        "borderTopHoverColor": "",
+        "desktopAlignment": "left",
+        "borderLeftHoverSize": "",
+        "borderRightHoverSize": "",
+        "hideOnMobile": "false",
+        "borderBottomColor": "--prm-primary_600",
+        "paddingBottomTop": "16",
+        "tabletWidth": "fit",
+        "paddingLeftRight": "0",
+        "hideOnDesktop": "false",
+        "borderBottomHoverColor": "",
+        "backgroundColorActive": "",
+        "rightIcon": "",
+        "textColorDisabled": "",
+        "textColorActive": "",
+        "jcr:lastModified": "",
+        "backgroundColorDisabled": "",
+        "_charset_": "UTF-8",
+        "borderTopColor": "",
+        "iconsSize": "16"
       }
   };
 }

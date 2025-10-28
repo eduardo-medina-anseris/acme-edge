@@ -5,5 +5,35 @@
 }
 
 
+@font-face {
+  font-family: 'worksansregurlar';
+  src: url('../fonts/theme-fonts/WorkSans-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'worksansregurlar';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/theme-fonts/WorkSans-ExtraLight.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'worksansregurlar';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/theme-fonts/WorkSans-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'worksansregurlar';
+  font-weight: 600;
+  font-style: normal;
+  src: url('../fonts/theme-fonts/WorkSans-SemiBold.ttf') format('truetype');
+}
+
+
 
 /* stylelint-enable */

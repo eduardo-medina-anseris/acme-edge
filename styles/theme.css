@@ -28,6 +28,7 @@
   --backgrounds-general: #f4f6f9;
   --header-background: #661c69;
   --header-foreground: #ffffff;
+  --complementary-transparent: rgba(255, 255, 255, 0);
 }
 und {
   text-decoration: underline;
@@ -47,7 +48,7 @@ italic {
 /* Typography Styles */
 .text-headline-1,
 h1 {
-  font-family: open_sans !important;
+  font-family: worksansregurlar !important;
   font-size: 47px !important;
   font-weight: 700 !important;
   line-height: 54.0px !important;
@@ -55,7 +56,7 @@ h1 {
 }
 @media (max-width: 1024px) {
   .text-headline-1--tablet {
-    font-family: open_sans !important;
+    font-family: worksansregurlar !important;
     font-size: 47px !important;
     font-weight: 700 !important;
     line-height: 54.0px !important;
@@ -64,7 +65,7 @@ h1 {
 }
 @media (max-width: 768px) {
   .text-headline-1--mobile {
-    font-family: open_sans !important;
+    font-family: worksansregurlar !important;
     font-size: 47px !important;
     font-weight: 700 !important;
     line-height: 54.0px !important;
@@ -73,7 +74,7 @@ h1 {
 }
 .text-headline-2,
 h2 {
-  font-family: open_sans !important;
+  font-family: worksansregurlar !important;
   font-size: 39px !important;
   font-weight: 700 !important;
   line-height: 45.0px !important;
@@ -81,7 +82,7 @@ h2 {
 }
 @media (max-width: 1024px) {
   .text-headline-2--tablet {
-    font-family: open_sans !important;
+    font-family: worksansregurlar !important;
     font-size: 39px !important;
     font-weight: 700 !important;
     line-height: 45.0px !important;
@@ -90,7 +91,7 @@ h2 {
 }
 @media (max-width: 768px) {
   .text-headline-2--mobile {
-    font-family: open_sans !important;
+    font-family: worksansregurlar !important;
     font-size: 39px !important;
     font-weight: 700 !important;
     line-height: 45.0px !important;
@@ -99,24 +100,24 @@ h2 {
 }
 .text-headline-3,
 h3 {
-  font-family: open_sans !important;
+  font-family: worksansregurlar !important;
   font-size: 27px !important;
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   color: var(--grey-black);
 }
 @media (max-width: 1024px) {
   .text-headline-3--tablet {
-    font-family: open_sans !important;
+    font-family: worksansregurlar !important;
     font-size: 27px !important;
-    font-weight: 700 !important;
+    font-weight: 800 !important;
     color: var(--grey-black);
   }
 }
 @media (max-width: 768px) {
   .text-headline-3--mobile {
-    font-family: open_sans !important;
+    font-family: worksansregurlar !important;
     font-size: 27px !important;
-    font-weight: 700 !important;
+    font-weight: 800 !important;
     color: var(--grey-black);
   }
 }
@@ -618,6 +619,53 @@ a:not([class]) {
 .home_button .acc-button--link:hover {
   color: var(--grey-black);
   background-color: var(--grey-white);
+}
+.orange-underline .acc-button--link {
+  box-sizing: border-box;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  gap: 8px;
+  background-color: var(--grey-white);
+  color: var(--prm-primary_600);
+  border-radius: 0px;
+  border-style: solid;
+  border-color: transparent;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.orange-underline .acc-button--link .icon img {
+  height: auto;
+  display: flex;
+}
+.orange-underline .acc-button--link .icon img {
+  width: 16px;
+}
+.orange-underline .acc-button--link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-style: solid;
+  border-radius: inherit;
+  pointer-events: none;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-bottom-color: var(--prm-primary_600);
+}
+.orange-underline .acc-button--link:hover {
+  color: var(--prm-primary_600);
+  background-color: var(--grey-white);
+}
+.orange-underline .acc-button--link:hover::after {
+  border-bottom-width: 2px;
 }
 .acc-separator {
   border: none;

@@ -14,7 +14,6 @@ export default function getVariants() {
         "componentVariantTitle": "Default"
       },
       "gray_line": {
-        "lineHeight": "1",
         "sling:resourceType": "themes/components/elements/acc/separator",
         "jcr:lastModifiedBy": "",
         "_charset_": "UTF-8",
@@ -22,10 +21,10 @@ export default function getVariants() {
         "componentVariantTitle": "Gray Line",
         "lineColor": "--grey-grey_400",
         "jcr:lastModified": "",
-        "separation": "20"
+        "separation": "20",
+        "lineHeight": "1"
       },
       "small": {
-        "lineHeight": "",
         "sling:resourceType": "themes/components/elements/acc/separator",
         "jcr:lastModifiedBy": "",
         "_charset_": "UTF-8",
@@ -33,7 +32,8 @@ export default function getVariants() {
         "componentVariantTitle": "Small",
         "lineColor": "",
         "jcr:lastModified": "",
-        "separation": "20"
+        "separation": "20",
+        "lineHeight": ""
       }
   };
 }

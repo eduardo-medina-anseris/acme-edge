@@ -2,7 +2,6 @@
 export default function getVariants() {
   return {
       "heading_1": {
-        "sling:resourceType": "themes/components/elements/acc/title",
         "jcr:lastModifiedBy": "",
         "typographyTablet": "text-headline-2",
         "_charset_": "UTF-8",
@@ -12,10 +11,10 @@ export default function getVariants() {
         "text": "Heading 1",
         "heading": "h1",
         "jcr:lastModified": "",
-        "jcr:primaryType": "nt:unstructured"
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "themes/components/elements/acc/title"
       },
       "heading_2": {
-        "sling:resourceType": "themes/components/elements/acc/title",
         "jcr:lastModifiedBy": "",
         "typographyTablet": "",
         "_charset_": "UTF-8",
@@ -25,10 +24,10 @@ export default function getVariants() {
         "text": "Heading 2",
         "heading": "h2",
         "jcr:lastModified": "",
-        "jcr:primaryType": "nt:unstructured"
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "themes/components/elements/acc/title"
       },
       "pretitle": {
-        "sling:resourceType": "themes/components/elements/acc/title",
         "jcr:lastModifiedBy": "",
         "typographyTablet": "",
         "_charset_": "UTF-8",
@@ -38,10 +37,10 @@ export default function getVariants() {
         "text": "Pretitle",
         "heading": "h4",
         "jcr:lastModified": "",
-        "jcr:primaryType": "nt:unstructured"
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "themes/components/elements/acc/title"
       },
       "heading_3": {
-        "sling:resourceType": "themes/components/elements/acc/title",
         "jcr:lastModifiedBy": "",
         "typographyTablet": "",
         "_charset_": "UTF-8",
@@ -51,10 +50,10 @@ export default function getVariants() {
         "text": "Heading",
         "heading": "h3",
         "jcr:lastModified": "",
-        "jcr:primaryType": "nt:unstructured"
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "themes/components/elements/acc/title"
       },
       "heading_4": {
-        "sling:resourceType": "themes/components/elements/acc/title",
         "jcr:lastModifiedBy": "",
         "typographyTablet": "",
         "_charset_": "UTF-8",
@@ -64,7 +63,8 @@ export default function getVariants() {
         "text": "Heading",
         "heading": "h4",
         "jcr:lastModified": "",
-        "jcr:primaryType": "nt:unstructured"
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "themes/components/elements/acc/title"
       }
   };
 }
