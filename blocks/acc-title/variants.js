@@ -26,6 +26,19 @@ export default function getVariants() {
         "jcr:lastModified": "",
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "themes/components/elements/acc/title"
+      },
+      "pretitle": {
+        "jcr:lastModifiedBy": "",
+        "typographyTablet": "",
+        "_charset_": "UTF-8",
+        "typographyMobile": "",
+        "componentVariantTitle": "Pretitle",
+        "typography": "text-pretitle",
+        "text": "Pretitle",
+        "heading": "h4",
+        "jcr:lastModified": "",
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "themes/components/elements/acc/title"
       }
   };
 }
