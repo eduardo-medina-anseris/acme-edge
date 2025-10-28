@@ -4,36 +4,36 @@ export default function getVariants() {
       "default": {
         "jcr:primaryType": "nt:unstructured",
         "separation": "40",
-        "lineColor": "",
-        "componentVariantDefault": "true",
-        "jcr:lastModifiedBy": "",
-        "componentVariantTitle": "Default",
-        "lineHeight": "",
-        "jcr:lastModified": "",
         "sling:resourceType": "themes/components/elements/acc/separator",
-        "_charset_": "UTF-8"
+        "lineColor": "",
+        "_charset_": "UTF-8",
+        "componentVariantDefault": "true",
+        "jcr:lastModified": "",
+        "lineHeight": "",
+        "jcr:lastModifiedBy": "",
+        "componentVariantTitle": "Default"
       },
       "gray_line": {
-        "jcr:primaryType": "nt:unstructured",
-        "separation": "20",
-        "lineColor": "--grey-grey_400",
-        "jcr:lastModifiedBy": "",
-        "componentVariantTitle": "Gray Line",
-        "lineHeight": "1",
-        "jcr:lastModified": "",
         "sling:resourceType": "themes/components/elements/acc/separator",
-        "_charset_": "UTF-8"
+        "jcr:lastModifiedBy": "",
+        "_charset_": "UTF-8",
+        "jcr:primaryType": "nt:unstructured",
+        "componentVariantTitle": "Gray Line",
+        "lineColor": "--grey-grey_400",
+        "jcr:lastModified": "",
+        "separation": "20",
+        "lineHeight": "1"
       },
       "small": {
-        "jcr:primaryType": "nt:unstructured",
-        "separation": "20",
-        "lineColor": "",
-        "jcr:lastModifiedBy": "",
-        "componentVariantTitle": "Small",
-        "lineHeight": "",
-        "jcr:lastModified": "",
         "sling:resourceType": "themes/components/elements/acc/separator",
-        "_charset_": "UTF-8"
+        "jcr:lastModifiedBy": "",
+        "_charset_": "UTF-8",
+        "jcr:primaryType": "nt:unstructured",
+        "componentVariantTitle": "Small",
+        "lineColor": "",
+        "jcr:lastModified": "",
+        "separation": "20",
+        "lineHeight": ""
       }
   };
 }

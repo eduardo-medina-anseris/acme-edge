@@ -24,6 +24,7 @@
   --grey-grey_200: #ececec;
   --grey-grey_100: #f4f6f9;
   --grey-white: #ffffff;
+  --grey-white-40: rgba(255, 255, 255, 0.4);
   --backgrounds-general: #f4f6f9;
   --header-background: #661c69;
   --header-foreground: #ffffff;
@@ -569,7 +570,7 @@ a:not([class]) {
   cursor: pointer;
   position: relative;
   gap: 8px;
-  background-color: var(--grey-white);
+  background-color: var(--grey-white-40);
   color: var(--grey-black);
   border-radius: 30px;
   border-style: solid;
@@ -589,7 +590,7 @@ a:not([class]) {
 }
 .home_button .acc-button--link:hover {
   color: var(--grey-black);
-  background-color: var(--grey-grey_100);
+  background-color: var(--grey-white);
 }
 .acc-separator {
   border: none;
