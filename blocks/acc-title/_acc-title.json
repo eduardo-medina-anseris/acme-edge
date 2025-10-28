@@ -45,6 +45,14 @@
             {
               "name": "pretitle",
               "value": "pretitle"
+            },
+            {
+              "name": "heading_3",
+              "value": "heading_3"
+            },
+            {
+              "name": "heading_4",
+              "value": "heading_4"
             }
           ]
         }

@@ -39,6 +39,32 @@ export default function getVariants() {
         "jcr:lastModified": "",
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "themes/components/elements/acc/title"
+      },
+      "heading_3": {
+        "jcr:lastModifiedBy": "",
+        "typographyTablet": "",
+        "_charset_": "UTF-8",
+        "typographyMobile": "",
+        "componentVariantTitle": "Heading 3",
+        "typography": "text-headline-3",
+        "text": "Heading",
+        "heading": "h3",
+        "jcr:lastModified": "",
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "themes/components/elements/acc/title"
+      },
+      "heading_4": {
+        "jcr:lastModifiedBy": "",
+        "typographyTablet": "",
+        "_charset_": "UTF-8",
+        "typographyMobile": "",
+        "componentVariantTitle": "Heading 4",
+        "typography": "text-h4-large-text",
+        "text": "Heading",
+        "heading": "h4",
+        "jcr:lastModified": "",
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "themes/components/elements/acc/title"
       }
   };
 }
