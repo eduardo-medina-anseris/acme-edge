@@ -266,7 +266,32 @@ a:not([class]) {
     line-height: 23.0px !important;
   }
 }
-.orange .acc-button--link {
+.text-button-text-small {
+  font-family: open_sans !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 21.0px !important;
+  text-decoration: none !important;
+}
+@media (max-width: 1024px) {
+  .text-button-text-small--tablet {
+    font-family: open_sans !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 21.0px !important;
+    text-decoration: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .text-button-text-small--mobile {
+    font-family: open_sans !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 21.0px !important;
+    text-decoration: none !important;
+  }
+}
+.acc-button--link {
   box-sizing: border-box;
   width: fit-content;
   height: 100%;
@@ -286,14 +311,14 @@ a:not([class]) {
   padding-left: 24px;
   padding-right: 24px;
 }
-.orange .acc-button--link .icon img {
+.acc-button--link .icon img {
   height: auto;
   display: flex;
 }
-.orange .acc-button--link .icon img {
+.acc-button--link .icon img {
   width: 24px;
 }
-.orange .acc-button--link:hover {
+.acc-button--link:hover {
   color: var(--grey-white);
   background-color: var(--prm-primary_500);
 }
@@ -534,6 +559,36 @@ a:not([class]) {
   border-right-width: 2px;
   border-bottom-width: 2px;
   border-left-width: 2px;
+}
+.home_button .acc-button--link {
+  box-sizing: border-box;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--grey-white);
+  color: var(--grey-black);
+  border-radius: 30px;
+  border-style: solid;
+  border-color: transparent;
+  border: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.home_button .acc-button--link .icon img {
+  height: auto;
+  display: flex;
+}
+.home_button .acc-button--link .icon img {
+  width: 10px;
+}
+.home_button .acc-button--link:hover {
+  color: var(--grey-black);
+  background-color: var(--grey-grey_100);
 }
 .acc-separator {
   border: none;
