@@ -434,6 +434,50 @@ a:not([class]) {
 .outline .acc-button--link:hover {
   color: var(--grey-white);
 }
+.white-outline-medium .acc-button--link {
+  box-sizing: border-box;
+  width: fit-content;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--grey-white);
+  color: var(--grey-grey_700);
+  border-radius: 48px;
+  border-style: solid;
+  border-color: transparent;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.white-outline-medium .acc-button--link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-style: solid;
+  border-radius: inherit;
+  pointer-events: none;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-color: var(--grey-grey_700);
+  border-right-color: var(--grey-grey_700);
+  border-bottom-color: var(--grey-grey_700);
+  border-left-color: var(--grey-grey_700);
+}
+.white-outline-medium .acc-button--link:hover {
+  color: var(--grey-grey_700);
+  background-color: var(--grey-white);
+}
+.white-outline-medium .acc-button--link:hover::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
 .acc-separator {
   border: none;
   background: transparent;
