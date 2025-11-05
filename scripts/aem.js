@@ -602,17 +602,8 @@ function decorateBlock(block) {
  * @param {Element} main The container element
  */
 function decorateBlocks(main) {
-  // Para Word / fallback
-  main.querySelectorAll('div.section > div > div, div.section a')
-      .forEach(decorateBlock);
-
-  // Para Edge: blocks dentro de contenedores (promotion, etc.)
-  if (main.querySelector('[data-aue-type="component"]')) {
-    main.querySelectorAll('div.section [data-aue-type="component"]')
-        .forEach(decorateBlock);
-  }
+  main.querySelectorAll('div.section > div > div, div.section a').forEach(decorateBlock);
 }
-
 
 /**
  * Loads a block named 'header' into header
