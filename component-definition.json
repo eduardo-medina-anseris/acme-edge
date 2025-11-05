@@ -99,7 +99,7 @@
           }
         },
         {
-          "title": "ACC Button",
+          "title": "ACC Title",
           "id": "acc-title",
           "plugins": {
             "xwalk": {
