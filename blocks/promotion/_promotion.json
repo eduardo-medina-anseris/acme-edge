@@ -20,23 +20,15 @@
     {
       "id": "promotion",
       "container": true,
-      "fields": [
-        {
-          "component": "group",
-          "name": "content",
-          "label": "Content",
-          "container": true,
-          "filter": "promotion-content"
-        }
-      ]
+      "fields": []
     }
   ],
   "filters": [
     {
       "id": "promotion-content",
       "components": [
-        "acc-button",
         "acc-title",
+        "acc-button",
         "acc-separator",
         "text",
         "title"

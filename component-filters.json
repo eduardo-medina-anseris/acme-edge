@@ -48,8 +48,8 @@
   {
     "id": "promotion-content",
     "components": [
-      "acc-button",
       "acc-title",
+      "acc-button",
       "acc-separator",
       "text",
       "title"
