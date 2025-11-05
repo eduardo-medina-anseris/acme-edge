@@ -46,6 +46,12 @@ export default function decorate(block) {
 
   const wrapperDiv = block.parentElement;
 
+  // boilerplate code to be prepared for variant switch logic.
+  if (!wrapperDiv.baseClasses) {
+    wrapperDiv.baseClasses = Array.from(wrapperDiv.classList);
+  }
+  wrapperDiv.className = wrapperDiv.baseClasses.join(' ');
+
   if (blockSettings.variant && !newBlock.dataset.variant) {
     newBlock.dataset.variant = blockSettings.variant;
     wrapperDiv.classList.add(blockSettings.variant);
