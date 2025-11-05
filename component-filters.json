@@ -46,15 +46,13 @@
     ]
   },
   {
-    "id": "promotion",
+    "id": "promotion‑filter",
     "components": [
-      "promotion-item"
-    ]
-  },
-  {
-    "id": "promotion-buttons",
-    "components": [
-      "acc-button"
+      "acc-button",
+      "acc-title",
+      "acc-separator",
+      "image",
+      "text"
     ]
   }
 ]
