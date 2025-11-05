@@ -355,14 +355,16 @@
   },
   {
     "id": "promotion",
-    "container": true,
     "fields": [
       {
-        "component": "group",
-        "name": "content",
-        "label": "Promotion Content",
-        "container": true,
-        "filter": "promotion-content"
+        "component": "text",
+        "name": "headline",
+        "label": "Headline"
+      },
+      {
+        "component": "text",
+        "name": "subheadline",
+        "label": "Subheadline"
       }
     ]
   }

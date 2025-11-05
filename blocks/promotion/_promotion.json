@@ -19,27 +19,29 @@
   "models": [
     {
       "id": "promotion",
-      "container": true,
       "fields": [
         {
-          "component": "group",
-          "name": "content",
-          "label": "Promotion Content",
-          "container": true,
-          "filter": "promotion-content"
+          "component": "text",
+          "name": "headline",
+          "label": "Headline"
+        },
+        {
+          "component": "text",
+          "name": "subheadline",
+          "label": "Subheadline"
         }
       ]
     }
   ],
   "filters": [
     {
-      "id": "promotion-content",
+      "id": "promotion",
       "components": [
-        "text",
-        "title",
+        "acc-button",
         "acc-title",
         "acc-separator",
-        "acc-button"
+        "text",
+        "image"
       ]
     }
   ]
