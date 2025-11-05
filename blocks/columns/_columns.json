@@ -1,7 +1,7 @@
 {
   "definitions": [
     {
-      "title": "Columns",
+      "title": "Columns (Nested)",
       "id": "columns",
       "plugins": {
         "xwalk": {
@@ -25,15 +25,23 @@
           "component": "text",
           "valueType": "number",
           "name": "columns",
-          "value": "",
+          "value": "2",
           "label": "Columns"
         },
         {
           "component": "text",
           "valueType": "number",
           "name": "rows",
-          "value": "",
+          "value": "1",
           "label": "Rows"
+        }
+      ],
+      "items": [
+        {
+          "id": "column",
+          "label": "Column",
+          "container": true,
+          "filter": "column"
         }
       ]
     }
@@ -47,6 +55,7 @@
     },
     {
       "id": "column",
+      "container": true,
       "components": [
         "text",
         "image",

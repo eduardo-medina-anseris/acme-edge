@@ -297,15 +297,23 @@
         "component": "text",
         "valueType": "number",
         "name": "columns",
-        "value": "",
+        "value": "2",
         "label": "Columns"
       },
       {
         "component": "text",
         "valueType": "number",
         "name": "rows",
-        "value": "",
+        "value": "1",
         "label": "Rows"
+      }
+    ],
+    "items": [
+      {
+        "id": "column",
+        "label": "Column",
+        "container": true,
+        "filter": "column"
       }
     ]
   },
@@ -342,6 +350,18 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "promotion",
+    "container": true,
+    "items": [
+      {
+        "id": "content",
+        "label": "Promotion Content",
+        "container": true,
+        "filter": "promotion-content"
       }
     ]
   }
