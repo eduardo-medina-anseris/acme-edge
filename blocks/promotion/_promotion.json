@@ -36,14 +36,22 @@
       "id": "promotion-item",
       "fields": [
         {
-          "component": "text",
-          "name": "headline",
-          "label": "Headline"
-        },
-        {
-          "component": "text",
-          "name": "subheadline",
-          "label": "Subheadline"
+          "component": "group",
+          "name": "texts",
+          "label": "Texts",
+          "container": true,
+          "fields": [
+            {
+              "component": "text",
+              "name": "headline",
+              "label": "Headline"
+            },
+            {
+              "component": "text",
+              "name": "subheadline",
+              "label": "Subheadline"
+            }
+          ]
         },
         {
           "component": "text",
