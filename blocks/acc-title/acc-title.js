@@ -42,7 +42,6 @@ function decorateUniversalEditor(heading) {
 
   headingWrapper.innerHTML = '';
   headingWrapper.append(newHeading);
-
 }
 
 export default function decorate(heading) {
