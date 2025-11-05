@@ -1,6 +1,7 @@
 import getVariants from './variants.js';
 
 function assignTypographyClasses(heading, cmpVariant, variants) {
+  heading.classList.add('acc-title__heading');
   if (variants) {
     if (cmpVariant) {
       const variantProperties = variants[cmpVariant];
@@ -55,9 +56,21 @@ export default function decorate(heading) {
     return;
   }
 
-  heading.classList.add('acc-title');
-
   const cmpVariant = heading.dataset.variant;
+
+  const wrapper = document.createElement('div');
+  wrapper.classList.add('acc-title');
+  wrapper.classList.add(...heading.classList);
+
+  if (heading.dataset.variant) {
+    wrapper.dataset.variant = heading.dataset.variant;
+    delete heading.dataset.variant;
+  }
+  heading.className = '';
+
+  heading.parentNode.insertBefore(wrapper, heading);
+  wrapper.appendChild(heading);
+
   const variants = getVariants();
   assignTypographyClasses(heading, cmpVariant, variants);
 }
