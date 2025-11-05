@@ -1,4 +1,7 @@
 
 
 mountpoints:
-  /: https://drive.google.com/drive/folders/1ZygSPHgyD7JaFSyJPwwK1GO6SHXduDFW
+  /:
+    url: "https://author-p47002-e1212860.adobeaemcloud.com/bin/franklin.delivery/eduardo-medina-anseris/acme-edge/main"
+    type: "markup"
+    suffix: ".html"
