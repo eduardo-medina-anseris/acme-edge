@@ -356,9 +356,10 @@
   {
     "id": "promotion",
     "container": true,
-    "items": [
+    "fields": [
       {
-        "id": "content",
+        "component": "group",
+        "name": "content",
         "label": "Promotion Content",
         "container": true,
         "filter": "promotion-content"
