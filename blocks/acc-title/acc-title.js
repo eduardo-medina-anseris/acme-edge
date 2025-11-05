@@ -18,7 +18,6 @@ function assignTypographyClasses(heading, cmpVariant, variants) {
 }
 
 function decorateUniversalEditor(heading) {
-  const headingWrapper = heading.parentElement;
   const divContainers = heading.querySelectorAll(':scope > div');
   let title = '';
   let cmpVariant = '';
@@ -36,12 +35,10 @@ function decorateUniversalEditor(heading) {
 
   const newHeading = document.createElement(headingType);
   newHeading.innerHTML = title;
-  newHeading.classList.add('acc-title');
 
   assignTypographyClasses(newHeading, cmpVariant, variants);
-
-  headingWrapper.innerHTML = '';
-  headingWrapper.append(newHeading);
+  heading.innerHTML = '';
+  heading.append(newHeading);
 }
 
 export default function decorate(heading) {
