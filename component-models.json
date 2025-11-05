@@ -354,7 +354,7 @@
     ]
   },
   {
-    "id": "promotion",
+    "id": "promotion-item",
     "fields": [
       {
         "component": "text",
@@ -365,6 +365,18 @@
         "component": "text",
         "name": "subheadline",
         "label": "Subheadline"
+      },
+      {
+        "component": "image",
+        "name": "image",
+        "label": "Background Image"
+      },
+      {
+        "component": "group",
+        "name": "buttons",
+        "label": "Buttons",
+        "container": true,
+        "filter": "promotion-buttons"
       }
     ]
   }

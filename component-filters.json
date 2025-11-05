@@ -48,11 +48,13 @@
   {
     "id": "promotion",
     "components": [
-      "acc-button",
-      "acc-title",
-      "acc-separator",
-      "text",
-      "image"
+      "promotion-item"
+    ]
+  },
+  {
+    "id": "promotion-buttons",
+    "components": [
+      "acc-button"
     ]
   }
 ]
