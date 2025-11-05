@@ -354,7 +354,7 @@
     ]
   },
   {
-    "id": "promotion",
+    "id": "promotion-item",
     "fields": [
       {
         "component": "text",
@@ -365,6 +365,34 @@
         "component": "text",
         "name": "subheadline",
         "label": "Subheadline"
+      },
+      {
+        "component": "text",
+        "name": "backgroundClass",
+        "label": "Background Class / Color",
+        "description": "CSS class or color for the item's background"
+      },
+      {
+        "component": "select",
+        "name": "collapsible",
+        "label": "Collapsible",
+        "options": [
+          {
+            "name": "No",
+            "value": "false"
+          },
+          {
+            "name": "Yes",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "component": "group",
+        "name": "content",
+        "label": "Content",
+        "container": true,
+        "filter": "promotion-content"
       }
     ]
   }
