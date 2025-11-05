@@ -13,6 +13,7 @@
       "image",
       "acc-button",
       "acc-title",
+      "acc-separator",
       "hero",
       "cards",
       "columns",
@@ -37,6 +38,8 @@
       "text",
       "image",
       "acc-button",
+      "acc-title",
+      "acc-separator",
       "title"
     ]
   }

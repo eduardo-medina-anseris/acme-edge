@@ -50,6 +50,8 @@
         "text",
         "image",
         "acc-button",
+        "acc-title",
+        "acc-separator",
         "title"
       ]
     }
