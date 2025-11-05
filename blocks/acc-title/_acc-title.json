@@ -21,7 +21,7 @@
       "id": "acc-title",
       "fields": [
         {
-          "component": "hidden",
+          "component": "text",
           "name": "accMarker",
           "label": "Marker",
           "value": "acc-title",
