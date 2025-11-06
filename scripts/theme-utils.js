@@ -82,12 +82,18 @@ export function decorateAccBlocks(main) {
 
   // Procesar cada bloque encontrado
   toProcess.forEach(({ parent, accClass }) => {
-    const blockParent = parent.parentElement; // El div contenedor de todos los <p>
+    let blockParent = parent.closest(`.${accClass}`);
+
+    if (!blockParent) {
+      blockParent = parent.parentElement; // El div contenedor de todos los <p>
+    }
 
     if (!blockParent) return;
 
     // Poner la clase en el div padre
-    blockParent.dataset.accClass = accClass;
+    if (!blockParent.classList.contains(accClass)) {
+      blockParent.classList.add(accClass);
+    }
 
     // Transformar todos los <p> hijos en <div>
     const children = Array.from(blockParent.children);
