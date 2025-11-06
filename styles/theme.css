@@ -694,14 +694,14 @@ a:not([class]) {
 .orange-underline .acc-button--link:hover::after {
   border-bottom-width: 2px;
 }
-.acc-separator {
+.acc-separator__spacer {
   border: none;
   background: transparent;
   display: flex;
   align-items: center;
   height: 40px;
 }
-.acc-separator > hr {
+.acc-separator__spacer > hr {
   flex: 1;
   border: none;
   background: transparent;
@@ -710,14 +710,14 @@ a:not([class]) {
 .dsedit .acc-separator {
   border: dotted 1px #d0d0d0;
 }
-.gray_line .acc-separator {
+.gray_line .acc-separator__spacer {
   border: none;
   background: transparent;
   display: flex;
   align-items: center;
   height: 40px;
 }
-.gray_line .acc-separator > hr {
+.gray_line .acc-separator__spacer > hr {
   flex: 1;
   border: none;
   background: transparent;
@@ -727,14 +727,14 @@ a:not([class]) {
 .gray_line .dsedit .acc-separator {
   border: dotted 1px #d0d0d0;
 }
-.small .acc-separator {
+.small .acc-separator__spacer {
   border: none;
   background: transparent;
   display: flex;
   align-items: center;
   height: 20px;
 }
-.small .acc-separator > hr {
+.small .acc-separator__spacer > hr {
   flex: 1;
   border: none;
   background: transparent;
