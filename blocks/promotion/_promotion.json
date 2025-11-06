@@ -27,6 +27,12 @@
     {
       "id": "promotion-content",
       "components": [
+        "container"
+      ]
+    },
+    {
+      "id": "container",
+      "components": [
         "acc-title",
         "acc-button",
         "acc-separator",
