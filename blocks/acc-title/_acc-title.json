@@ -11,7 +11,7 @@
               "name": "Acc Title",
               "model": "acc-title",
               "quote": "<p>Think, McFly! Think!</p>",
-              "titleText": "Biff Tannen"
+              "accName": "Biff Tannen v2"
             }
           }
         }
@@ -22,6 +22,11 @@
     {
       "id": "acc-title",
       "fields": [
+        {
+          "component": "hidden",
+          "name": "accName",
+          "label": "Title"
+        },
         {
           "component": "text",
           "name": "titleText",

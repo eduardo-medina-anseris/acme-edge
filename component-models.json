@@ -206,6 +206,11 @@
     "id": "acc-title",
     "fields": [
       {
+        "component": "hidden",
+        "name": "accName",
+        "label": "Title"
+      },
+      {
         "component": "text",
         "name": "titleText",
         "label": "Title"
