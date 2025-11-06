@@ -62,88 +62,92 @@ export function decorateAccBlocks(main) {
 
   const accRegex = /^\s*\[(acc-[^\]]+)\]\s*$/;
 
+  // TreeWalker para recorrer todos los nodos de texto
   const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
+
   const blocksToProcess = [];
 
-  // Recopilar todos los nodos de texto que indican un bloque
   while (walker.nextNode()) {
     const node = walker.currentNode;
     const text = node.nodeValue.trim();
-    const match = text.match(accRegex);
 
+    const match = text.match(accRegex);
     if (match) {
       const accClass = match[1].trim();
-      const p = node.parentElement;
-      if (p && p.tagName.toLowerCase() === 'p') {
-        blocksToProcess.push({ p, accClass });
+      const parentEl = node.parentElement;
+      if (parentEl && parentEl.tagName.toLowerCase() === 'p') {
+        const blockDiv = parentEl.closest(`.acc-title, .acc-separator, .acc-${accClass}, [data-block-name="${accClass}"], [data-aue-model="${accClass}"]`);
+        blocksToProcess.push({ node, accClass, blockDiv });
       }
     }
   }
 
-  blocksToProcess.forEach(({ p, accClass }) => {
-    const parentEl = p.parentElement;
-    if (!parentEl) return;
+  blocksToProcess.forEach(({ node, accClass, blockDiv }) => {
+    if (blockDiv) {
+      if (typeof decorateBlock === 'function') {
+        decorateBlock(blockDiv);
+      }
+      return;
+    }
 
-    const blockParent = parentEl.closest('div');
-    if (!blockParent || [...blockParent.classList].some((cls) => cls.startsWith('acc-'))) return;
+    const p = node.parentElement;
+    const container = p ? p.parentElement : null;
+    if (!container) return;
 
-    const children = Array.from(blockParent.children);
+    const children = Array.from(container.children);
     let blockPs = [];
     let currentAccClass = accClass;
 
     children.forEach((child, idx) => {
-      if (child.tagName.toLowerCase() !== 'p') return;
+      if (child.tagName.toLowerCase() === 'p') {
+        const text = child.textContent.trim();
+        const match = text.match(accRegex);
 
-      const text = child.textContent.trim();
-      const match = text.match(accRegex);
-      if (match) {
-        // Crear bloque anterior si existe
-        if (blockPs.length > 0) {
-          const blockDiv = document.createElement('div');
-          blockDiv.classList.add(currentAccClass);
+        if (match) {
+          if (blockPs.length > 0) {
+            const newBlockDiv = document.createElement('div');
+            newBlockDiv.classList.add(currentAccClass);
+
+            blockPs.forEach((pEl) => {
+              const innerWrapper = document.createElement('div');
+              const innerDiv = document.createElement('div');
+              innerDiv.textContent = pEl.textContent;
+              innerWrapper.appendChild(innerDiv);
+              newBlockDiv.appendChild(innerWrapper);
+            });
+
+            container.insertBefore(newBlockDiv, blockPs[0]);
+            blockPs.forEach((pEl) => pEl.remove());
+
+            if (typeof decorateBlock === 'function') {
+              decorateBlock(newBlockDiv);
+            }
+          }
+
+          currentAccClass = match[1].trim();
+          blockPs = [child];
+        } else if (currentAccClass) {
+          blockPs.push(child);
+        }
+
+        if (idx === children.length - 1 && blockPs.length > 0) {
+          const newBlockDiv = document.createElement('div');
+          newBlockDiv.classList.add(currentAccClass);
 
           blockPs.forEach((pEl) => {
             const innerWrapper = document.createElement('div');
             const innerDiv = document.createElement('div');
             innerDiv.textContent = pEl.textContent;
             innerWrapper.appendChild(innerDiv);
-            blockDiv.appendChild(innerWrapper);
+            newBlockDiv.appendChild(innerWrapper);
           });
 
-          blockParent.insertBefore(blockDiv, blockPs[0]);
+          container.insertBefore(newBlockDiv, blockPs[0]);
           blockPs.forEach((pEl) => pEl.remove());
 
-          // Llamar a decorateBlock sobre el bloque recién creado
           if (typeof decorateBlock === 'function') {
-            decorateBlock(blockDiv);
+            decorateBlock(newBlockDiv);
           }
-        }
-
-        currentAccClass = match[1].trim();
-        blockPs = [child];
-      } else if (currentAccClass) {
-        blockPs.push(child);
-      }
-
-      // Último <p> del contenedor
-      if (idx === children.length - 1 && blockPs.length > 0) {
-        const blockDiv = document.createElement('div');
-        blockDiv.classList.add(currentAccClass);
-
-        blockPs.forEach((pEl) => {
-          const innerWrapper = document.createElement('div');
-          const innerDiv = document.createElement('div');
-          innerDiv.textContent = pEl.textContent;
-          innerWrapper.appendChild(innerDiv);
-          blockDiv.appendChild(innerWrapper);
-        });
-
-        blockParent.insertBefore(blockDiv, blockPs[0]);
-        blockPs.forEach((pEl) => pEl.remove());
-
-        // Llamar a decorateBlock sobre el bloque recién creado
-        if (typeof decorateBlock === 'function') {
-          decorateBlock(blockDiv);
         }
       }
     });
