@@ -207,13 +207,6 @@
     "fields": [
       {
         "component": "text",
-        "name": "accMarker",
-        "label": "Marker",
-        "value": "acc-title",
-        "hidden": true
-      },
-      {
-        "component": "text",
         "name": "titleText",
         "label": "Title"
       },
