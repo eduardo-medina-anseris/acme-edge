@@ -173,6 +173,10 @@
     "id": "acc-separator",
     "fields": [
       {
+        "component": "hidden",
+        "name": "accBlock"
+      },
+      {
         "component": "text",
         "name": "separation",
         "label": "Size in pixels"

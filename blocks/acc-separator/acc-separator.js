@@ -4,7 +4,7 @@ import {
 
 export default function decorate(block) {
   const blockSettings = {};
-  const expectedKeys = ['separation', 'variant']; // orden esperado si no hay keys
+  const expectedKeys = ['separation', 'variant'];
 
   const pairContainers = block.querySelectorAll(':scope > div');
 
