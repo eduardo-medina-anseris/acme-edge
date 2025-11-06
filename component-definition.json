@@ -109,7 +109,7 @@
                   "name": "Acc Title",
                   "model": "acc-title",
                   "quote": "<p>Think, McFly! Think!</p>",
-                  "author": "Biff Tannen"
+                  "titleText": "Biff Tannen"
                 }
               }
             }
