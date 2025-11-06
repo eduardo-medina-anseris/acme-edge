@@ -21,8 +21,7 @@
     {
       "id": "promotion",
       "container": true,
-      "fields": [],
-      "items": []
+      "fields": []
     }
   ],
   "filters": [
@@ -30,11 +29,10 @@
       "id": "promotion",
       "container": true,
       "components": [
-        "text",
-        "image",
-        "acc-button",
         "acc-title",
+        "acc-button",
         "acc-separator",
+        "text",
         "title"
       ]
     }

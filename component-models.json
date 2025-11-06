@@ -363,7 +363,6 @@
   {
     "id": "promotion",
     "container": true,
-    "fields": [],
-    "items": []
+    "fields": []
   }
 ]
