@@ -37,19 +37,19 @@
           "options": [
             {
               "name": "default",
-              "value": ""
+              "value": "[variant-0]"
             },
             {
               "name": "default",
-              "value": "default"
+              "value": "[variant-default]"
             },
             {
               "name": "gray_line",
-              "value": "gray_line"
+              "value": "[variant-gray_line]"
             },
             {
               "name": "small",
-              "value": "small"
+              "value": "[variant-small]"
             }
           ]
         }
