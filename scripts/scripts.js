@@ -16,6 +16,7 @@ import {
 import {
   decorateVariants,
   decorateSeparators,
+  decorateAccBlocks,
 } from './theme-utils.js';
 
 /**
@@ -93,6 +94,7 @@ export function decorateMain(main) {
   decorateVariants(main);
   decorateSeparators(main);
   decorateBlocks(main);
+  decorateAccBlocks(main);
 }
 
 /**
