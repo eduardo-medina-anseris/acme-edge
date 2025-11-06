@@ -60,13 +60,12 @@ export function decorateVariants(main) {
 export function decorateAccBlocks(main) {
   if (!main) return;
 
-  // TreeWalker para iterar solo nodos de texto
-  const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
-  const toProcess = [];
-
-  // Regex para detectar [acc-*]
   const accRegex = /^\s*\[(acc-[^\]]+)\]\s*$/;
 
+  const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
+  const blocksToProcess = [];
+
+  // Recopilar todos los nodos de texto que indican un bloque
   while (walker.nextNode()) {
     const node = walker.currentNode;
     const text = node.nodeValue.trim();
@@ -74,52 +73,80 @@ export function decorateAccBlocks(main) {
 
     if (match) {
       const accClass = match[1].trim();
-      const parent = node.parentElement;
-
-      if (parent) toProcess.push({ parent, accClass });
+      const p = node.parentElement;
+      if (p && p.tagName.toLowerCase() === 'p') {
+        blocksToProcess.push({ p, accClass });
+      }
     }
   }
 
-  // Procesar cada bloque encontrado
-  toProcess.forEach(({ parent, accClass }) => {
-    let blockParent = parent.closest(`[data-aue-model="${accClass}"], [data-block-name="${accClass}"]`);
+  blocksToProcess.forEach(({ p, accClass }) => {
+    const parentEl = p.parentElement;
+    if (!parentEl) return;
 
-    if (!blockParent) {
-      blockParent = parent.parentElement;
-      if (blockParent
-        && blockParent.childElementCount === 1) {
-        blockParent = blockParent.parentElement;
-      }
-    }
+    const blockParent = parentEl.closest('div');
+    if (!blockParent || [...blockParent.classList].some((cls) => cls.startsWith('acc-'))) return;
 
-    if (!blockParent) return;
-
-    // Poner la clase en el div padre
-    if (!blockParent.classList.contains(accClass)) {
-      blockParent.classList.add(accClass);
-    }
-
-    // Transformar todos los <p> hijos en <div>
     const children = Array.from(blockParent.children);
+    let blockPs = [];
+    let currentAccClass = accClass;
 
-    children.forEach((child) => {
-      const innerText = child.textContent;
+    children.forEach((child, idx) => {
+      if (child.tagName.toLowerCase() !== 'p') return;
 
-      // Crear un div interno
-      const innerDiv = document.createElement('div');
-      innerDiv.textContent = innerText;
+      const text = child.textContent.trim();
+      const match = text.match(accRegex);
+      if (match) {
+        // Crear bloque anterior si existe
+        if (blockPs.length > 0) {
+          const blockDiv = document.createElement('div');
+          blockDiv.classList.add(currentAccClass);
 
-      // Reemplazar el p original por un div que lo envuelve
-      const wrapperDiv = document.createElement('div');
-      wrapperDiv.appendChild(innerDiv);
+          blockPs.forEach((pEl) => {
+            const innerWrapper = document.createElement('div');
+            const innerDiv = document.createElement('div');
+            innerDiv.textContent = pEl.textContent;
+            innerWrapper.appendChild(innerDiv);
+            blockDiv.appendChild(innerWrapper);
+          });
 
-      blockParent.replaceChild(wrapperDiv, child);
+          blockParent.insertBefore(blockDiv, blockPs[0]);
+          blockPs.forEach((pEl) => pEl.remove());
+
+          // Llamar a decorateBlock sobre el bloque recién creado
+          if (typeof decorateBlock === 'function') {
+            decorateBlock(blockDiv);
+          }
+        }
+
+        currentAccClass = match[1].trim();
+        blockPs = [child];
+      } else if (currentAccClass) {
+        blockPs.push(child);
+      }
+
+      // Último <p> del contenedor
+      if (idx === children.length - 1 && blockPs.length > 0) {
+        const blockDiv = document.createElement('div');
+        blockDiv.classList.add(currentAccClass);
+
+        blockPs.forEach((pEl) => {
+          const innerWrapper = document.createElement('div');
+          const innerDiv = document.createElement('div');
+          innerDiv.textContent = pEl.textContent;
+          innerWrapper.appendChild(innerDiv);
+          blockDiv.appendChild(innerWrapper);
+        });
+
+        blockParent.insertBefore(blockDiv, blockPs[0]);
+        blockPs.forEach((pEl) => pEl.remove());
+
+        // Llamar a decorateBlock sobre el bloque recién creado
+        if (typeof decorateBlock === 'function') {
+          decorateBlock(blockDiv);
+        }
+      }
     });
-
-    // Ejecutar decorateBlock sobre el div padre
-    if (typeof decorateBlock === 'function') {
-      decorateBlock(blockParent);
-    }
   });
 }
 
