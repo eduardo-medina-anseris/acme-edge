@@ -75,8 +75,8 @@ export function decorateAccBlocks(main) {
     if (match) {
       const accClass = match[1].trim();
       const parentEl = node.parentElement;
-      if (parentEl && parentEl.tagName.toLowerCase() === 'p') {
-        const blockDiv = parentEl.closest(`.acc-title, .acc-separator, .acc-${accClass}, [data-block-name="${accClass}"], [data-aue-model="${accClass}"]`);
+      if (parentEl) {
+        const blockDiv = parentEl.closest(`.${accClass}`);
         blocksToProcess.push({ node, accClass, blockDiv });
       }
     }
