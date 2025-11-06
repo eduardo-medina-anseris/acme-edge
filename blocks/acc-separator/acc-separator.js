@@ -1,5 +1,4 @@
 import {
-  applyVariantAttributes,
   findVariant,
 } from '../../scripts/theme-utils.js';
 
@@ -10,16 +9,12 @@ function apply(block, blockSettings) {
   spacer.classList.add('acc-separator__spacer');
   spacer.append(hr);
 
-  const newBlock = document.createElement('div');
-  applyVariantAttributes(newBlock, block);
-
   if (blockSettings.separation) {
     block.style.height = blockSettings.separation;
   }
 
-  if (blockSettings.variant && !newBlock.dataset.variant) {
-    newBlock.dataset.variant = blockSettings.variant;
-    newBlock.classList.add(blockSettings.variant);
+  if (blockSettings.variant) {
+    block.classList.add(blockSettings.variant);
   }
 
   block.innerHTML = '';
