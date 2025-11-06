@@ -46,7 +46,7 @@
     ]
   },
   {
-    "id": "promotion",
+    "id": "promotion-content",
     "components": [
       "acc-title",
       "acc-button",
