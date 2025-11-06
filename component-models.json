@@ -363,6 +363,29 @@
   {
     "id": "promotion",
     "container": true,
-    "fields": []
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "value": "",
+        "label": "Background image",
+        "valueType": "string",
+        "validation": {
+          "rootPath": "/content/dam"
+        }
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      }
+    ]
   }
 ]
