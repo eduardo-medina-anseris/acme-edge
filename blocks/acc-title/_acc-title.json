@@ -10,7 +10,8 @@
             "template": {
               "name": "Acc Title",
               "model": "acc-title",
-              "myCustomProp": "myCustomPropValue"
+              "quote": "<p>Think, McFly! Think!</p>",
+              "author": "Biff Tannen"
             }
           }
         }
