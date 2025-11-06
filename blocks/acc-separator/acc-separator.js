@@ -1,5 +1,6 @@
 import {
   applyVariantAttributes,
+  findVariant,
 } from '../../scripts/theme-utils.js';
 
 function apply(block, blockSettings) {
@@ -33,12 +34,16 @@ function decorateUniversalEditor(block) {
   const divContainers = block.querySelectorAll(':scope > div');
   const blockSettings = {};
 
-  if (divContainers.length > 1) {
+  const variant = findVariant(divContainers);
+
+  if (divContainers.length > 1
+    && variant !== null
+    && variant.index !== 1) {
     blockSettings.separation = divContainers[1].innerText;
   }
 
-  if (divContainers.length > 2) {
-    blockSettings.variant = divContainers[2]?.innerText?.trim();
+  if (variant !== null && variant.value !== '0') {
+    blockSettings.variant = variant.value;
   }
 
   apply(block, blockSettings);

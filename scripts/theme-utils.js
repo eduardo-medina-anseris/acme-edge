@@ -7,6 +7,24 @@ function isCssSize(value) {
   return regex.test(value.trim());
 }
 
+export function findVariant(divContainers) {
+  if (!divContainers || divContainers.length < 1) {
+    return null;
+  }
+
+  const lastIndex = divContainers.length - 1;
+  const lastDiv = divContainers[lastIndex];
+  const text = lastDiv?.innerText?.trim() || '';
+
+  const match = text.match(/\[variant-([^\]]+)\]/);
+
+  if (match) {
+    return { index: lastIndex, value: match[1] };
+  }
+
+  return null;
+}
+
 /**
  * Applies variant classes to elements based on following [[variant: ...]] markers.
  *
