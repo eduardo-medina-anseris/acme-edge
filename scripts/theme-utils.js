@@ -82,10 +82,13 @@ export function decorateAccBlocks(main) {
 
   // Procesar cada bloque encontrado
   toProcess.forEach(({ parent, accClass }) => {
-    let blockParent = parent.closest(`[data-aue-model="${accClass}"]`);
+    let blockParent = parent.closest(`[data-aue-model="${accClass}"], [data-block-name="${accClass}"]`);
 
     if (!blockParent) {
-      blockParent = parent.parentElement; // El div contenedor de todos los <p>
+      blockParent = parent.parentElement;
+      if (blockParent.childElementCount === 1) {
+        blockParent = blockParent.parentElement;
+      }
     }
 
     if (!blockParent) return;
