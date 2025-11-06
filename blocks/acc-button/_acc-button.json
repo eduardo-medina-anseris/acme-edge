@@ -42,43 +42,43 @@
           "options": [
             {
               "name": "default",
-              "value": ""
+              "value": "[variant-0]"
             },
             {
               "name": "orange",
-              "value": "orange"
+              "value": "[variant-orange]"
             },
             {
               "name": "purple",
-              "value": "purple"
+              "value": "[variant-purple]"
             },
             {
               "name": "black",
-              "value": "black"
+              "value": "[variant-black]"
             },
             {
               "name": "white-outline",
-              "value": "white-outline"
+              "value": "[variant-white-outline]"
             },
             {
               "name": "white",
-              "value": "white"
+              "value": "[variant-white]"
             },
             {
               "name": "outline",
-              "value": "outline"
+              "value": "[variant-outline]"
             },
             {
               "name": "white-outline-medium",
-              "value": "white-outline-medium"
+              "value": "[variant-white-outline-medium]"
             },
             {
               "name": "home_button",
-              "value": "home_button"
+              "value": "[variant-home_button]"
             },
             {
               "name": "orange-underline",
-              "value": "orange-underline"
+              "value": "[variant-orange-underline]"
             }
           ]
         }

@@ -4,36 +4,36 @@ export default function getVariants() {
       "default": {
         "jcr:primaryType": "nt:unstructured",
         "separation": "40",
-        "sling:resourceType": "themes/components/elements/acc/separator",
         "lineColor": "",
-        "_charset_": "UTF-8",
         "componentVariantDefault": "true",
-        "jcr:lastModified": "",
-        "lineHeight": "",
         "jcr:lastModifiedBy": "",
-        "componentVariantTitle": "Default"
+        "componentVariantTitle": "Default",
+        "lineHeight": "",
+        "jcr:lastModified": "",
+        "sling:resourceType": "themes/components/elements/acc/separator",
+        "_charset_": "UTF-8"
       },
       "gray_line": {
-        "sling:resourceType": "themes/components/elements/acc/separator",
-        "jcr:lastModifiedBy": "",
-        "_charset_": "UTF-8",
         "jcr:primaryType": "nt:unstructured",
-        "componentVariantTitle": "Gray Line",
+        "separation": "40",
         "lineColor": "--grey-grey_400",
+        "jcr:lastModifiedBy": "",
+        "componentVariantTitle": "Gray Line",
+        "lineHeight": "1",
         "jcr:lastModified": "",
-        "separation": "20",
-        "lineHeight": "1"
+        "sling:resourceType": "themes/components/elements/acc/separator",
+        "_charset_": "UTF-8"
       },
       "small": {
-        "sling:resourceType": "themes/components/elements/acc/separator",
-        "jcr:lastModifiedBy": "",
-        "_charset_": "UTF-8",
         "jcr:primaryType": "nt:unstructured",
-        "componentVariantTitle": "Small",
-        "lineColor": "",
-        "jcr:lastModified": "",
         "separation": "20",
-        "lineHeight": ""
+        "lineColor": "",
+        "jcr:lastModifiedBy": "",
+        "componentVariantTitle": "Small",
+        "lineHeight": "",
+        "jcr:lastModified": "",
+        "sling:resourceType": "themes/components/elements/acc/separator",
+        "_charset_": "UTF-8"
       }
   };
 }

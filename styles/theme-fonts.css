@@ -6,6 +6,12 @@
 
 
 @font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/theme-fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+
+@font-face {
   font-family: 'worksansregurlar';
   src: url('../fonts/theme-fonts/WorkSans-Regular.ttf') format('truetype');
 }

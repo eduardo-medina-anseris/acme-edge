@@ -37,27 +37,27 @@
           "options": [
             {
               "name": "default",
-              "value": ""
+              "value": "[variant-0]"
             },
             {
               "name": "heading_1",
-              "value": "heading_1"
+              "value": "[variant-heading_1]"
             },
             {
               "name": "heading_2",
-              "value": "heading_2"
+              "value": "[variant-heading_2]"
             },
             {
               "name": "pretitle",
-              "value": "pretitle"
+              "value": "[variant-pretitle]"
             },
             {
               "name": "heading_3",
-              "value": "heading_3"
+              "value": "[variant-heading_3]"
             },
             {
               "name": "heading_4",
-              "value": "heading_4"
+              "value": "[variant-heading_4]"
             }
           ]
         }
