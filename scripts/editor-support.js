@@ -63,7 +63,7 @@ async function applyChanges(event) {
         decorateAccBlocks(newBlock);
         decorateRichtext(newBlock);
         const innerBlocks = [...newBlock.querySelectorAll('div.block')];
-        for (let i = 0; i < blocks.length; i += 1) {
+        for (let i = 0; i < innerBlocks.length; i += 1) {
           // eslint-disable-next-line no-await-in-loop
           await loadBlock(innerBlocks[i]);
         }
