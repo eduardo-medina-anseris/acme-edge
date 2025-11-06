@@ -10,7 +10,8 @@
             "template": {
               "name": "Acc Title",
               "model": "acc-title",
-              "accBlock": "[acc-title]"
+              "accBlock": "[acc-title]",
+              "variant": "[variant-0]"
             }
           }
         }
