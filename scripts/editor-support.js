@@ -60,6 +60,7 @@ async function applyChanges(event) {
         decorateButtons(newBlock);
         decorateIcons(newBlock);
         decorateBlock(newBlock);
+        decorateAccBlocks(parentElement);
         decorateRichtext(newBlock);
         await loadBlock(newBlock);
         block.remove();
