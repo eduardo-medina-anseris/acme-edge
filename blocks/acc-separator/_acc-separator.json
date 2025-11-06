@@ -10,7 +10,7 @@
             "template": {
               "name": "ACC Separator",
               "model": "acc-separator",
-              "accBlock": "[acc-title]"
+              "accBlock": "[acc-separator]"
             }
           }
         }

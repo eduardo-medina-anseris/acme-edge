@@ -86,7 +86,8 @@ export function decorateAccBlocks(main) {
 
     if (!blockParent) {
       blockParent = parent.parentElement;
-      if (blockParent.childElementCount === 1) {
+      if (blockParent
+        && blockParent.childElementCount === 1) {
         blockParent = blockParent.parentElement;
       }
     }
