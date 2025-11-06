@@ -1,27 +1,24 @@
 export default function decorate(block) {
-  block.classList.add('promotion-block');
+  // Create main hero wrapper
+  const wrapper = document.createElement('div');
+  wrapper.classList.add('hero-promotion-block');
 
-  const items = block.querySelectorAll(':scope > .promotion-item');
+  // Content wrapper
+  const content = document.createElement('div');
+  content.classList.add('hero-promotion-content');
 
-  items.forEach((item) => {
-    item.classList.add('promotion-item');
+  // BACKGROUND IMAGE: take the first <img> inside <picture> in first <p>
+  const img = block.querySelector(':scope > div:nth-child(1) p picture img');
+  if (img) {
+    wrapper.style.backgroundImage = `
+      linear-gradient(176.98deg, rgba(0, 0, 0, 0.6) 7.49%, rgba(0, 0, 0, 0) 95.15%),
+      url('${img.src}')
+    `;
+    wrapper.style.backgroundSize = 'cover';
+    wrapper.style.backgroundPosition = 'center';
+  }
 
-    // Aplicar fondo si se define
-    const bgClass = item.dataset.backgroundClass;
-    if (bgClass) item.classList.add(bgClass);
-
-    // Comportamiento collapsable
-    const collapsible = item.dataset.collapsible === 'true';
-    const content = item.querySelector(':scope > .promotion-content');
-    if (collapsible && content) {
-      content.style.display = 'none';
-      const toggle = document.createElement('div');
-      toggle.classList.add('promotion-toggle');
-      toggle.textContent = 'Mostrar / Ocultar';
-      toggle.addEventListener('click', () => {
-        content.style.display = content.style.display === 'none' ? 'block' : 'none';
-      });
-      item.prepend(toggle);
-    }
-  });
+  // Clear original block and insert new layout
+  // block.innerHTML = '';
+  // block.appendChild(wrapper);
 }
