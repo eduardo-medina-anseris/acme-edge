@@ -215,9 +215,10 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/columns/v1/columns",
+                "resourceType": "core/franklin/components/columns/v1/columns/column",
                 "template": {
-                  "columns": "1",
+                  "name": "Promotion",
+                  "model": "promotion",
                   "filters": "promotion"
                 }
               }

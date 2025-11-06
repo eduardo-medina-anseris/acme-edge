@@ -47,12 +47,6 @@
   },
   {
     "id": "promotion",
-    "components": [
-      "column"
-    ]
-  },
-  {
-    "id": "column",
     "container": true,
     "components": [
       "text",

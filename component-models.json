@@ -363,23 +363,7 @@
   {
     "id": "promotion",
     "container": true,
-    "fields": [
-      {
-        "readOnly": true,
-        "component": "text",
-        "valueType": "number",
-        "name": "columns",
-        "value": "1",
-        "label": "Body"
-      }
-    ],
-    "items": [
-      {
-        "id": "column",
-        "label": "Column",
-        "container": true,
-        "filter": "column"
-      }
-    ]
+    "fields": [],
+    "items": []
   }
 ]
