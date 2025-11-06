@@ -51,11 +51,7 @@
     {
       "id": "promotion",
       "components": [
-        "acc-title",
-        "acc-button",
-        "acc-separator",
-        "text",
-        "title"
+        "acc-button"
       ]
     }
   ]
