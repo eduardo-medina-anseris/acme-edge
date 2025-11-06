@@ -2,39 +2,7 @@ import {
   applyVariantAttributes,
 } from '../../scripts/theme-utils.js';
 
-export default function decorate(block) {
-  const blockSettings = {};
-  const expectedKeys = ['separation', 'variant']; // orden esperado si no hay keys
-
-  const pairContainers = block.querySelectorAll(':scope > div');
-
-  let hasKeys = false;
-
-  pairContainers.forEach((container) => {
-    const paragraphs = container.querySelectorAll('p');
-    if (paragraphs.length >= 2) hasKeys = true;
-  });
-
-  pairContainers.forEach((container, index) => {
-    const paragraphs = container.querySelectorAll('p');
-
-    if (hasKeys && paragraphs.length >= 2) {
-      const key = paragraphs[0].textContent.trim();
-      const value = paragraphs[1].textContent.trim();
-      blockSettings[key] = value;
-    } else if (!hasKeys && paragraphs.length >= 1) {
-      const value = paragraphs[0].textContent.trim();
-      const key = expectedKeys[index] || `key${index}`;
-      blockSettings[key] = value;
-
-      if (key === 'separation') {
-        blockSettings[key] = `${value}px`;
-      } else {
-        blockSettings[key] = value;
-      }
-    }
-  });
-
+function apply(block, blockSettings) {
   const hr = document.createElement('hr');
 
   const newBlock = document.createElement('div');
@@ -59,4 +27,44 @@ export default function decorate(block) {
 
   block.innerHTML = '';
   block.append(hr);
+}
+
+function decorateUniversalEditor(block) {
+  const divContainers = block.querySelectorAll(':scope > div');
+  const blockSettings = {};
+
+  if (divContainers.length > 1) {
+    blockSettings.separation = divContainers[1].innerText;
+  }
+
+  if (divContainers.length > 2) {
+    blockSettings.variant = divContainers[2]?.innerText?.trim();
+  }
+
+  apply(block, blockSettings);
+}
+
+export default function decorate(block) {
+  const blockWrapper = block.parentElement;
+
+  if (blockWrapper.classList.contains('acc-separator-wrapper')
+    && block.tagName === 'DIV') {
+    decorateUniversalEditor(block);
+    return;
+  }
+  const blockSettings = {};
+
+  const pairContainers = block.querySelectorAll(':scope > div');
+
+  pairContainers.forEach((container) => {
+    const paragraphs = container.querySelectorAll('p');
+
+    if (paragraphs.length >= 2) {
+      const key = paragraphs[0].textContent.trim();
+      const value = paragraphs[1].textContent.trim();
+      blockSettings[key] = value;
+    }
+  });
+
+  apply(block, blockSettings);
 }
