@@ -23,6 +23,10 @@
       "id": "acc-button",
       "fields": [
         {
+          "component": "hidden",
+          "name": "accBlock"
+        },
+        {
           "component": "aem-content",
           "name": "buttonLink",
           "label": "Link"
