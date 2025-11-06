@@ -87,7 +87,7 @@ export function decorateAccBlocks(main) {
     if (!blockParent) return;
 
     // Poner la clase en el div padre
-    blockParent.classList.add(accClass);
+    blockParent.dataset.accClass = accClass;
 
     // Transformar todos los <p> hijos en <div>
     const children = Array.from(blockParent.children);
