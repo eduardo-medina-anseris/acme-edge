@@ -109,7 +109,12 @@ export function decorateAccBlocks(main) {
     }
 
     const p = node.parentElement;
-    const container = p ? p.parentElement : null;
+    let container = p ? p.parentElement : null;
+
+    if (container && container.childElementCount === 1) {
+      container = container.parentElement;
+    }
+
     if (!container) return;
 
     const children = Array.from(container.children);
@@ -117,38 +122,11 @@ export function decorateAccBlocks(main) {
     let currentAccClass = accClass;
 
     children.forEach((child, idx) => {
-      if (child.tagName.toLowerCase() === 'p') {
-        const text = child.textContent.trim();
-        const match = text.match(accRegex);
+      const text = child.textContent.trim();
+      const match = text.match(accRegex);
 
-        if (match) {
-          if (blockPs.length > 0) {
-            const newBlockDiv = document.createElement('div');
-            newBlockDiv.classList.add(currentAccClass);
-
-            blockPs.forEach((pEl) => {
-              const innerWrapper = document.createElement('div');
-              const innerDiv = document.createElement('div');
-              innerDiv.textContent = pEl.textContent;
-              innerWrapper.appendChild(innerDiv);
-              newBlockDiv.appendChild(innerWrapper);
-            });
-
-            container.insertBefore(newBlockDiv, blockPs[0]);
-            blockPs.forEach((pEl) => pEl.remove());
-
-            if (typeof decorateBlock === 'function') {
-              decorateBlock(newBlockDiv);
-            }
-          }
-
-          currentAccClass = match[1].trim();
-          blockPs = [child];
-        } else if (currentAccClass) {
-          blockPs.push(child);
-        }
-
-        if (idx === children.length - 1 && blockPs.length > 0) {
+      if (match) {
+        if (blockPs.length > 0) {
           const newBlockDiv = document.createElement('div');
           newBlockDiv.classList.add(currentAccClass);
 
@@ -166,6 +144,31 @@ export function decorateAccBlocks(main) {
           if (typeof decorateBlock === 'function') {
             decorateBlock(newBlockDiv);
           }
+        }
+
+        currentAccClass = match[1].trim();
+        blockPs = [child];
+      } else if (currentAccClass) {
+        blockPs.push(child);
+      }
+
+      if (idx === children.length - 1 && blockPs.length > 0) {
+        const newBlockDiv = document.createElement('div');
+        newBlockDiv.classList.add(currentAccClass);
+
+        blockPs.forEach((pEl) => {
+          const innerWrapper = document.createElement('div');
+          const innerDiv = document.createElement('div');
+          innerDiv.textContent = pEl.textContent;
+          innerWrapper.appendChild(innerDiv);
+          newBlockDiv.appendChild(innerWrapper);
+        });
+
+        container.insertBefore(newBlockDiv, blockPs[0]);
+        blockPs.forEach((pEl) => pEl.remove());
+
+        if (typeof decorateBlock === 'function') {
+          decorateBlock(newBlockDiv);
         }
       }
     });
