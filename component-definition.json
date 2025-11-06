@@ -108,8 +108,7 @@
                 "template": {
                   "name": "Acc Title",
                   "model": "acc-title",
-                  "quote": "<p>Think, McFly! Think!</p>",
-                  "accName": "Biff Tannen v2"
+                  "accBlock": "[acc-title]"
                 }
               }
             }

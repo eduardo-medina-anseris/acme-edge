@@ -207,8 +207,7 @@
     "fields": [
       {
         "component": "hidden",
-        "name": "accName",
-        "label": "Title"
+        "name": "accBlock"
       },
       {
         "component": "text",

@@ -10,8 +10,7 @@
             "template": {
               "name": "Acc Title",
               "model": "acc-title",
-              "quote": "<p>Think, McFly! Think!</p>",
-              "accName": "Biff Tannen v2"
+              "accBlock": "[acc-title]"
             }
           }
         }
@@ -24,8 +23,7 @@
       "fields": [
         {
           "component": "hidden",
-          "name": "accName",
-          "label": "Title"
+          "name": "accBlock"
         },
         {
           "component": "text",
