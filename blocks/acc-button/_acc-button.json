@@ -37,11 +37,6 @@
           "label": "Text"
         },
         {
-          "component": "text",
-          "name": "buttonTitle",
-          "label": "Title"
-        },
-        {
           "component": "select",
           "name": "variant",
           "label": "Variant",
