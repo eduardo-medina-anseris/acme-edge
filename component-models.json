@@ -363,13 +363,22 @@
   {
     "id": "promotion",
     "container": true,
-    "fields": [],
+    "fields": [
+      {
+        "readOnly": true,
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "1",
+        "label": "Body"
+      }
+    ],
     "items": [
       {
         "id": "column",
-        "label": "Promotion Content",
+        "label": "Column",
         "container": true,
-        "filter": "promotion-content"
+        "filter": "column"
       }
     ]
   }

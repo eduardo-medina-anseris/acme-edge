@@ -165,7 +165,7 @@
           }
         },
         {
-          "title": "Columns (Nested)",
+          "title": "Columns",
           "id": "columns",
           "plugins": {
             "xwalk": {
@@ -215,10 +215,10 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
-                  "name": "Promotion",
-                  "filter": "promotion"
+                  "columns": "1",
+                  "filters": "promotion"
                 }
               }
             }

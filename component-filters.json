@@ -46,12 +46,20 @@
     ]
   },
   {
-    "id": "promotion-content",
+    "id": "promotion",
     "components": [
-      "acc-title",
-      "acc-button",
-      "acc-separator",
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "container": true,
+    "components": [
       "text",
+      "image",
+      "acc-button",
+      "acc-title",
+      "acc-separator",
       "title"
     ]
   }
