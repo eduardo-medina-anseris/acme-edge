@@ -76,9 +76,7 @@ export function decorateAccBlocks(main) {
       const accClass = match[1].trim();
       const parent = node.parentElement;
 
-      if (!parent.closest(`.${accClass}`)) {
-        if (parent) toProcess.push({ parent, accClass });
-      }
+      if (parent) toProcess.push({ parent, accClass });
     }
   }
 
