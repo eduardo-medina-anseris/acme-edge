@@ -366,8 +366,9 @@
     "fields": [],
     "items": [
       {
-        "id": "promotion-content",
+        "id": "column",
         "label": "Promotion Content",
+        "container": true,
         "filter": "promotion-content"
       }
     ]
