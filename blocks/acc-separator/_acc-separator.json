@@ -51,6 +51,10 @@
             {
               "name": "small",
               "value": "[variant-small]"
+            },
+            {
+              "name": "test",
+              "value": "[variant-test]"
             }
           ]
         }

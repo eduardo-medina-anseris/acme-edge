@@ -2,38 +2,48 @@
 export default function getVariants() {
   return {
       "default": {
-        "jcr:primaryType": "nt:unstructured",
         "separation": "40",
-        "lineColor": "",
-        "componentVariantDefault": "true",
-        "jcr:lastModifiedBy": "",
-        "componentVariantTitle": "Default",
-        "lineHeight": "",
         "jcr:lastModified": "",
+        "lineColor": "",
+        "componentVariantTitle": "Default",
+        "jcr:primaryType": "nt:unstructured",
+        "_charset_": "UTF-8",
+        "jcr:lastModifiedBy": "",
         "sling:resourceType": "themes/components/elements/acc/separator",
-        "_charset_": "UTF-8"
+        "lineHeight": ""
       },
       "gray_line": {
-        "jcr:primaryType": "nt:unstructured",
-        "separation": "40",
-        "lineColor": "--grey-grey_400",
-        "jcr:lastModifiedBy": "",
-        "componentVariantTitle": "Gray Line",
-        "lineHeight": "1",
+        "separation": "20",
         "jcr:lastModified": "",
+        "lineColor": "--grey-grey_400",
+        "componentVariantTitle": "Gray Line",
+        "jcr:primaryType": "nt:unstructured",
+        "_charset_": "UTF-8",
+        "jcr:lastModifiedBy": "",
         "sling:resourceType": "themes/components/elements/acc/separator",
-        "_charset_": "UTF-8"
+        "lineHeight": "1"
       },
       "small": {
-        "jcr:primaryType": "nt:unstructured",
         "separation": "20",
-        "lineColor": "",
-        "jcr:lastModifiedBy": "",
-        "componentVariantTitle": "Small",
-        "lineHeight": "",
         "jcr:lastModified": "",
+        "lineColor": "",
+        "componentVariantTitle": "Small",
+        "jcr:primaryType": "nt:unstructured",
+        "_charset_": "UTF-8",
+        "jcr:lastModifiedBy": "",
         "sling:resourceType": "themes/components/elements/acc/separator",
-        "_charset_": "UTF-8"
+        "lineHeight": ""
+      },
+      "test": {
+        "separation": "10",
+        "jcr:lastModified": "",
+        "lineColor": "--prm-primary_600",
+        "componentVariantTitle": "Test",
+        "jcr:primaryType": "nt:unstructured",
+        "_charset_": "UTF-8",
+        "jcr:lastModifiedBy": "",
+        "sling:resourceType": "themes/components/elements/acc/separator",
+        "lineHeight": "1"
       }
   };
 }
