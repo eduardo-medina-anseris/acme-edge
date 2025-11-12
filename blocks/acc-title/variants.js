@@ -2,9 +2,6 @@
 export default function getVariants() {
   return {
       "heading_1": {
-        "typographyTablet": "text-headline-2",
-        "jcr:lastModifiedBy": "",
-        "sling:resourceType": "themes/components/elements/acc/title",
         "jcr:primaryType": "nt:unstructured",
         "jcr:lastModified": "",
         "heading": "h1",
@@ -12,12 +9,12 @@ export default function getVariants() {
         "typography": "text-headline-1",
         "componentVariantTitle": "Heading 1",
         "typographyMobile": "text-headline-3",
-        "_charset_": "UTF-8"
+        "_charset_": "UTF-8",
+        "typographyTablet": "text-headline-2",
+        "jcr:lastModifiedBy": "",
+        "sling:resourceType": "themes/components/elements/acc/title"
       },
       "heading_2": {
-        "typographyTablet": "",
-        "jcr:lastModifiedBy": "",
-        "sling:resourceType": "themes/components/elements/acc/title",
         "jcr:primaryType": "nt:unstructured",
         "jcr:lastModified": "",
         "heading": "h2",
@@ -25,12 +22,12 @@ export default function getVariants() {
         "typography": "text-headline-2",
         "componentVariantTitle": "Heading 2",
         "typographyMobile": "",
-        "_charset_": "UTF-8"
-      },
-      "pretitle": {
+        "_charset_": "UTF-8",
         "typographyTablet": "",
         "jcr:lastModifiedBy": "",
-        "sling:resourceType": "themes/components/elements/acc/title",
+        "sling:resourceType": "themes/components/elements/acc/title"
+      },
+      "pretitle": {
         "jcr:primaryType": "nt:unstructured",
         "jcr:lastModified": "",
         "heading": "h4",
@@ -38,12 +35,12 @@ export default function getVariants() {
         "typography": "text-pretitle",
         "componentVariantTitle": "Pretitle",
         "typographyMobile": "",
-        "_charset_": "UTF-8"
-      },
-      "heading_3": {
+        "_charset_": "UTF-8",
         "typographyTablet": "",
         "jcr:lastModifiedBy": "",
-        "sling:resourceType": "themes/components/elements/acc/title",
+        "sling:resourceType": "themes/components/elements/acc/title"
+      },
+      "heading_3": {
         "jcr:primaryType": "nt:unstructured",
         "jcr:lastModified": "",
         "heading": "h3",
@@ -51,12 +48,12 @@ export default function getVariants() {
         "typography": "text-headline-3",
         "componentVariantTitle": "Heading 3",
         "typographyMobile": "",
-        "_charset_": "UTF-8"
-      },
-      "heading_4": {
+        "_charset_": "UTF-8",
         "typographyTablet": "",
         "jcr:lastModifiedBy": "",
-        "sling:resourceType": "themes/components/elements/acc/title",
+        "sling:resourceType": "themes/components/elements/acc/title"
+      },
+      "heading_4": {
         "jcr:primaryType": "nt:unstructured",
         "jcr:lastModified": "",
         "heading": "h4",
@@ -64,7 +61,10 @@ export default function getVariants() {
         "typography": "text-h4-large-text",
         "componentVariantTitle": "Heading 4",
         "typographyMobile": "",
-        "_charset_": "UTF-8"
+        "_charset_": "UTF-8",
+        "typographyTablet": "",
+        "jcr:lastModifiedBy": "",
+        "sling:resourceType": "themes/components/elements/acc/title"
       }
   };
 }
